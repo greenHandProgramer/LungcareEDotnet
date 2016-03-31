@@ -1,3 +1,0 @@
-# LungcareE
-
-readme
