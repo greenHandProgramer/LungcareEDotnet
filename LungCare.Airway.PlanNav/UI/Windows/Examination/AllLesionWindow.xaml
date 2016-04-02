@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LungCare.SupportPlatform.UI.Windows"
+        xmlns:Forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" 
+    x:Class="LungCare.SupportPlatform.UI.Windows.Examination.AllLesionWindow"
+        mc:Ignorable="d"
+        Title="MsgWindow" Height="299.5" Width="601.333" WindowStyle="None" ResizeMode="NoResize"  Foreground="{x:Null}" WindowStartupLocation="CenterScreen"  Loaded="Window_Loaded" KeyDown="Window_KeyDown" GotFocus="Window_GotFocus" Background="{x:Null}">
+    <Grid Background="Transparent">
+        <Border x:Name="borderMessage" BorderThickness="5" MouseDown="borderMessage_MouseDown" BorderBrush="#FF592759"  CornerRadius="10,10,10,10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF592759"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Background="#FF592759" Opacity="0.89" Margin="5,5,-5,-5">
+                <Label x:Name="label" Margin="0" Foreground="White" HorizontalContentAlignment="Center" FontSize="32" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
+                <WrapPanel x:Name="bb" Background="#4CFFFFFF" Margin="76,87,73,84"/>
+                <WindowsFormsHost x:Name="wfClose" HorizontalAlignment="Right" Height="63" VerticalAlignment="Top" Width="64" Margin="0,2,22,0">
+                    <Forms:FlowLayoutPanel x:Name="panel2" />
+                </WindowsFormsHost>
+                <!--<Image x:Name="btnClose" HorizontalAlignment="Right" Height="35" Margin="0,10,10,0" VerticalAlignment="Top" Width="35" Source="/LungCare.Airway.PlanNav;component/Images/close_7.png" MouseDown="btnClose_MouseDown" Cursor="Hand"/>-->
+                <WindowsFormsHost HorizontalAlignment="Left" Height="77" Margin="76,213,0,0" VerticalAlignment="Top" Width="204">
+                    <Forms:FlowLayoutPanel x:Name="panel1" />
+                </WindowsFormsHost>
+                
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="LungCare_Airway_PlanNav.ZLF.Controls.UploadFileUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LungCare_Airway_PlanNav.ZLF.Controls"
+             mc:Ignorable="d" Height="417" Width="719" Loaded="UserControl_Loaded">
+    <Grid>
+        <Button x:Name="btnUploadFile" Content="Button" Click="btnUploadFile_Click"  HorizontalAlignment="Left" Height="43" Margin="283,346,0,0" VerticalAlignment="Top" Width="198" Style="{DynamicResource uploadButtonStyle}"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="264" Margin="223,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="321"/>
+        <Label Content="选择" HorizontalAlignment="Left" Height="51" Margin="345,119,0,0" VerticalAlignment="Top" Width="78" FontSize="32" Foreground="#FF999999"/>
+        <Label Content="文件" HorizontalAlignment="Left" Height="49" Margin="345,170,0,0" VerticalAlignment="Top" Width="78" FontSize="32" Foreground="#FF999999"/>
+        <Label x:Name="lbDicomError" Content="压缩包中没有发现Dicom信息" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="699" HorizontalContentAlignment="Center" Foreground="#FFE61717" FontSize="26.667"/>
+        <Label x:Name="lbParsingDicom" Content="正在解析Dicom信息。大约要占用2分钟。请稍等。" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="709" HorizontalContentAlignment="Center" Foreground="#FFE61717" FontSize="26.667"/>
+    </Grid>
+</UserControl>

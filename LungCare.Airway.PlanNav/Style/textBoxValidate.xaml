@@ -1,0 +1,57 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+	<!-- 应该在此定义资源字典条目。-->
+	 <Style x:Key="ValidationTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="Validation.ErrorTemplate">
+            <Setter.Value>
+                <ControlTemplate>
+                    <DockPanel LastChildFill="True">
+                        <TextBlock DockPanel.Dock="Right"
+                                           Foreground="Red" FontSize="14" FontWeight="Bold"
+                                           ToolTip="{Binding ElementName=adornerPlaceholder,
+                                           Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+                                    *
+                        </TextBlock>
+                        <Border BorderBrush="Red" BorderThickness="2" CornerRadius="3">
+                            <AdornedElementPlaceholder Name="adornerPlaceholder"></AdornedElementPlaceholder>
+                        </Border>
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="true">
+                <Setter Property="ToolTip"
+                                Value="{Binding RelativeSource={RelativeSource Self},
+                                Path=(Validation.Errors)[0].ErrorContent}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="ValidationPasswordBoxStyle" TargetType="{x:Type PasswordBox}">
+        <Setter Property="Validation.ErrorTemplate">
+            <Setter.Value>
+                <ControlTemplate>
+                    <DockPanel LastChildFill="True">
+                        <TextBlock DockPanel.Dock="Right"
+                                           Foreground="Red" FontSize="14" FontWeight="Bold"
+                                           ToolTip="{Binding ElementName=adornerPlaceholder,
+                                           Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+                                    *
+                        </TextBlock>
+                        <Border BorderBrush="Red" BorderThickness="1" CornerRadius="3">
+                            <AdornedElementPlaceholder Name="adornerPlaceholder"></AdornedElementPlaceholder>
+                        </Border>
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="true">
+                <Setter Property="ToolTip"
+                                Value="{Binding RelativeSource={RelativeSource Self},
+                                Path=(Validation.Errors)[0].ErrorContent}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

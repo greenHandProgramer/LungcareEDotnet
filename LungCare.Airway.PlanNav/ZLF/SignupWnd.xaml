@@ -1,0 +1,49 @@
+﻿<Window x:Class="LungCare.SupportPlatform.UI.SignupWnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LungCare.SupportPlatform.UI"
+        xmlns:ThemedControlsLibrary="clr-namespace:ThemedControlsLibrary;assembly=ThemedControlsLibrary"
+        mc:Ignorable="d"
+        Title="朗开医疗肺e助手-用户注册" Height="540" Width="960" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Cursor="Arrow" ShowInTaskbar="False">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="caia412-13890-v.png"/>
+        </Grid.Background>
+        <TextBox x:Name="tbPhoneNumber" Height="35" Margin="0,67,410,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" HorizontalAlignment="Right" Width="197" TabIndex="1" MaxLength="11" MaxLines="1"/>
+        <PasswordBox x:Name="pbPassword" Margin="0,150,410,0" VerticalAlignment="Top" FontSize="18.667" Height="35" HorizontalAlignment="Right" Width="197" TabIndex="2" MaxLength="20"/>
+        <PasswordBox x:Name="pbPasswordRetype" Margin="0,190,410,316" FontSize="18.667" HorizontalAlignment="Right" Width="197" TabIndex="3" MaxLength="20"/>
+        <Button x:Name="btnSignup" Content="注册" Margin="412,0,429,31" VerticalAlignment="Bottom" Height="29" Click="btnSignup_Click" IsEnabled="False" FontSize="18.667" Style="{DynamicResource selectAllButtonStyle}"/>
+        <TextBox x:Name="tbChineseName" Margin="0,230,410,275" TextWrapping="Wrap" FontSize="18.667" HorizontalAlignment="Right" Width="197" TabIndex="4" MaxLength="10" MaxLines="1" Height="35"/>
+        <TextBox x:Name="tbDepartment" Height="35" Margin="0,0,410,192" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="18.667" HorizontalAlignment="Right" Width="197" TabIndex="6" MaxLength="20" MaxLines="1"/>
+        <TextBox x:Name="tbHosp" Height="36" Margin="0,0,410,234" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="18.667" HorizontalAlignment="Right" Width="197" TabIndex="5" MaxLength="20" MaxLines="1"/>
+        <Label x:Name="labelPhoneNumberErrorPrompt" Content="请正确填写手机号" HorizontalAlignment="Left" Margin="566,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.425,0.654" Width="299" Foreground="Red" FontSize="18.667" Height="35"/>
+        <Label x:Name="labelPasswordErrorPrompt" Content="请填写密码" HorizontalAlignment="Left" Margin="566,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.425,0.654" Width="169" Foreground="Red" FontSize="18.667" Height="35"/>
+        <Label x:Name="labelPasswordRetypeErrorPrompt" Content="请保证两次输入的密码一致" HorizontalAlignment="Left" Margin="566,190,0,316" RenderTransformOrigin="1.425,0.654" Width="238" Foreground="Red" FontSize="18.667"/>
+        <Label x:Name="labelChineseNameErrorPrompt" Content="请正确输入您的姓名" HorizontalAlignment="Left" Margin="566,230,0,275" RenderTransformOrigin="1.425,0.654" Width="201" Foreground="Red" FontSize="18.667" Height="35"/>
+        <Label x:Name="labelHospErrorPrompt" Content="请填写您所在的医院" HorizontalAlignment="Left" Margin="566,0,0,234" VerticalAlignment="Bottom" RenderTransformOrigin="1.425,0.654" Width="201" Foreground="Red" FontSize="18.667" Height="36"/>
+        <Label x:Name="labelDepartmentErrorPrompt" Content="请填写您所在的部门" HorizontalAlignment="Left" Margin="566,313,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.425,0.654" Width="201" Foreground="Red" FontSize="18.667" Height="35"/>
+        <Label x:Name="labelArgumentErrorPrompt" Content="注册前请先同意协议" HorizontalAlignment="Left" Margin="127.35,441,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.425,0.654" Width="201" Foreground="Red" FontSize="18.667" Visibility="Hidden"/>
+        <Label x:Name="label" Content="用户注册" HorizontalAlignment="Left" Margin="372,4,0,0" VerticalAlignment="Top" FontSize="37.333"/>
+        <Label  Content="* 手机号码" HorizontalAlignment="Left" Margin="218,67,0,0" VerticalAlignment="Top" FontSize="18.667" Height="35" Width="117"/>
+        <Label  Content="* 验证码" HorizontalAlignment="Left" Margin="218,108,0,0" VerticalAlignment="Top" FontSize="18.667" Height="36" Width="117"/>
+        <Label  Content="* 设置密码" HorizontalAlignment="Left" Margin="218,150,0,0" FontSize="18.667" VerticalAlignment="Top" Height="35" Width="117"/>
+        <Label  Content="* 再次输入" HorizontalAlignment="Left" Margin="218,190,0,0" FontSize="18.667" VerticalAlignment="Top" Height="34" Width="117"/>
+        <Label  Content="* 您的姓名" HorizontalAlignment="Left" Margin="218,230,0,0" FontSize="18.667" Width="117" VerticalAlignment="Top" Height="35"/>
+        <Label  Content="* 所在医院" HorizontalAlignment="Left" Margin="218,270,0,0" FontSize="18.667" Width="117" Height="36" VerticalAlignment="Top"/>
+        <Label  Content="* 所在科室" HorizontalAlignment="Left" Margin="218,313,0,0" VerticalAlignment="Top" FontSize="18.667" Height="35" Width="117"/>
+        <Label  Content=" 从医资格证" HorizontalAlignment="Left" Margin="217,0,0,154" VerticalAlignment="Bottom" FontSize="18.667" RenderTransformOrigin="0.503,1.379"/>
+        <Button x:Name="btnUploadCert" Content="点击上传" Margin="0,0,506,151" VerticalAlignment="Bottom" Click="btnUploadCert_Click" Height="35" FontSize="18.667" HorizontalAlignment="Right" Width="102" Style="{DynamicResource normalButtonStyle}"/>
+        <Label Content="温馨提示：为了保证信息安全，请上传您的资格证，才可查看结果!" Margin="242,397,187,104" Foreground="#FF5A255A" FontSize="16"></Label>
+        <CheckBox x:Name="cbLiceneseAgreed" Margin="242,442,696,76" FontSize="10.667" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <ThemedControlsLibrary:LinkLabel x:Name="protocal" Click="protocal_Click" Content="我已经阅读并同意《肺e助手 用户注册协议》" Margin="273,436,95,65" FontSize="16" />
+        <Button x:Name="btnView" Content="点击预览" Visibility="Hidden" Margin="0,0,340,151" VerticalAlignment="Bottom" Click="btnView_Click" Height="35" FontSize="18.667" HorizontalAlignment="Right" Width="101" Style="{DynamicResource normalButtonStyle}"/>
+        <Image x:Name="btnClose" HorizontalAlignment="Left" Height="35" Margin="919,4,0,0" VerticalAlignment="Top" Width="35" Source="/LungCare.Airway.PlanNav;component/Images/close_7.png" MouseDown="btnClose_MouseDown" Cursor="Hand"/>
+        <TextBox x:Name="tbVerifiyCode" Height="36" Margin="0,108,410,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" HorizontalAlignment="Right" Width="197" TabIndex="1" MaxLength="6" MaxLines="1"/>
+        <Button x:Name="btn发送验证码" Content="发送验证码" Margin="0,0,255,396" VerticalAlignment="Bottom" Height="36" FontSize="18.667" HorizontalAlignment="Right" Width="139" Click="btn发送验证码_Click"/>
+    </Grid>
+</Window>

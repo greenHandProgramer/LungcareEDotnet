@@ -1,0 +1,6 @@
+2016-03-14 03-28-56
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlMA.SaveLesion() 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlMA.cs:行号 3118
+2016-03-14 03-29-49
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlMA.SaveLesion() 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlMA.cs:行号 3118

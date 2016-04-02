@@ -1,0 +1,203 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        xmlns:LungCare_Airway_PlanNav="clr-namespace:LungCare.SupportPlatform.UI.UserControls.Common"
+        x:Class="LungCare.SupportPlatform.UI.Windows.Admin.AdminWindow"
+        Title="MainWindow" Width="1260" Height="640" WindowStartupLocation="CenterScreen"  Visibility="Visible" AllowsTransparency="True" WindowStyle="None">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Viewbox Margin="0">
+                            <Border x:Name="border" BorderBrush="White" BorderThickness="1" Height="100" Width="100" CornerRadius="5" Background="#7F3E7FFF">
+                                <Grid x:Name="grid">
+                                    <Path x:Name="path" Data="F1M1355.27,1727.8L1346.08,1727.8C1346.06,1726.48 1346.05,1725.67 1346.05,1725.38 1346.05,1722.41 1346.54,1719.96 1347.52,1718.04 1348.51,1716.12 1350.47,1713.96 1353.43,1711.56 1356.38,1709.16 1358.14,1707.58 1358.72,1706.84 1359.61,1705.66 1360.05,1704.37 1360.05,1702.95 1360.05,1700.98 1359.27,1699.29 1357.7,1697.89 1356.12,1696.49 1354,1695.78 1351.34,1695.78 1348.77,1695.78 1346.62,1696.52 1344.89,1697.98 1343.16,1699.44 1341.98,1701.68 1341.33,1704.68L1332.04,1703.53C1332.3,1699.23 1334.13,1695.58 1337.53,1692.58 1340.93,1689.58 1345.38,1688.08 1350.91,1688.08 1356.72,1688.08 1361.34,1689.6 1364.77,1692.63 1368.21,1695.67 1369.92,1699.2 1369.92,1703.24 1369.92,1705.47 1369.29,1707.58 1368.03,1709.58 1366.77,1711.57 1364.08,1714.28 1359.95,1717.71 1357.81,1719.49 1356.48,1720.92 1355.97,1722 1355.45,1723.08 1355.22,1725.01 1355.27,1727.8z M1346.08,1741.41L1346.08,1731.29 1356.2,1731.29 1356.2,1741.41 1346.08,1741.41z" Stretch="Uniform" Fill="#FFFFFFFF" Width="Auto" Height="Auto" Margin="15" RenderTransformOrigin="0.5,0.5">
+                                        <Path.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup>
+                                        </Path.RenderTransform>
+                                    </Path>
+                                </Grid>
+                            </Border>
+                        </Viewbox>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#FF3E7FFF"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#CC003FBC"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true"/>
+                            <Trigger Property="ToggleButton.IsChecked" Value="true"/>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                                <Setter Property="Background" TargetName="border" Value="#FF7A7A7A"/>
+                                <Setter Property="Fill" TargetName="path" Value="#FFC8C8C8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Storyboard x:Key="OnMouseLeftButtonDown1"/>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown"/>
+    </Window.Triggers>
+    <Border x:Name="headBorder" BorderBrush="Black" BorderThickness="0" Background="#FF272727">
+        <Grid x:Name="gd" Margin="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="0.717*"/>
+                <RowDefinition Height="0"/>
+            </Grid.RowDefinitions>
+            <Border  BorderBrush="#FF5A5A5A" BorderThickness="1">
+                <Grid Margin="0" Background="#FF592759" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="680"/>
+                        <ColumnDefinition Width="0.502*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="image" Margin="29.541,4.661,500.459,3" Source="../Images/矢量智能对象.png" Stretch="UniformToFill" Visibility="Visible" Width="150" />
+                    <Image x:Name="personHeadImageHead" Margin="209.5,17,443.5,4" Source="../Images/User-Add.png" Visibility="Visible" Width="27" Height="27" />
+                    <Button x:Name="btnExit"  Content="Button" Grid.Column="2" HorizontalAlignment="Right" Height="46" Margin="0,0.666,10,0" VerticalAlignment="Top" Width="72" Style="{DynamicResource ButtonStyle3}" Cursor="Hand" Click="btnExit_Click"/>
+                    <TextBlock x:Name="userNameHead" HorizontalAlignment="Left" Margin="242,21,0,0" TextWrapping="Wrap" Text="Hi , admin" VerticalAlignment="Top" Height="24" Width="485" Foreground="#FFF5F1F1" FontSize="16" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="370,26,0,0" TextWrapping="Wrap" Text="，欢迎登陆朗开医疗！" VerticalAlignment="Top" Height="15" Width="115" FontSize="10.667" Foreground="#FFF0EAEA" Visibility="Hidden"/>
+                    <Button x:Name="btnADMIN" Grid.ColumnSpan="2" Content="ADMIN" HorizontalAlignment="Left" Margin="652,9,0,0" VerticalAlignment="Top" Width="75"  Visibility="Hidden"/>
+
+                </Grid>
+            </Border>
+            <Grid Margin="0" Grid.Row="1">
+                <TabControl x:Name="tabControl" TabStripPlacement="Left" Margin="0" SelectionChanged="tabControl_SelectionChanged" >
+
+                    <TabItem  Header="订单列表" Width="109" Height="45" FontSize="12" Margin="0" HorizontalAlignment="Left" Style="{DynamicResource TabItem-navigate}" >
+                        <Border BorderBrush="#FF5A5A5A" BorderThickness="0" Margin="0">
+                            <LungCare_Airway_PlanNav:Tabitem_dingdanliebiao x:Name="dingdanliebiao"  />
+                        </Border>
+                    </TabItem>
+
+
+
+                    <!--<TabItem  Header="证书审核" Width="109" Height="45" FontSize="12" Margin="0"   Style="{DynamicResource TabItem-navigate}" >
+						<Border BorderBrush="#FF5A5A5A" BorderThickness="0" Margin="0">
+                            <LungCare_Airway_PlanNav:ItemTab_zhengshushenhe x:Name="zhengshushenhe"/>
+                        </Border>
+					</TabItem>-->
+
+
+
+
+                    <TabItem  Header="证书审核" Width="109" Height="45" FontSize="12" Margin="0"   Style="{DynamicResource TabItem-navigate}" >
+                        <Border BorderBrush="#FF5A5A5A" BorderThickness="0" Margin="0">
+                            <LungCare_Airway_PlanNav:tabitem_yonghushenhe x:Name="yonghushenhe"/>
+                        </Border>
+                    </TabItem>
+
+                    <TabItem  Header="用户列表" Width="109" Height="45" FontSize="12" Margin="0"   Style="{DynamicResource TabItem-navigate}" >
+                        <Border BorderBrush="#FF5A5A5A" BorderThickness="0" Margin="0">
+                            <LungCare_Airway_PlanNav:Tabitem_yonghuliebiao x:Name="yonghuliebiao"  />
+                        </Border>
+                    </TabItem>
+
+                    <TabItem  Header="通知配置" Width="109" Height="45" FontSize="12" Margin="0"   Style="{DynamicResource TabItem-navigate}" >
+                        <Grid>
+                            <Button  Content="通知手机号" HorizontalAlignment="Right" Margin="0,0,749,411" Width="170" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="19" Height="50" VerticalAlignment="Bottom" IsEnabled="False" Visibility="Visible">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
+                                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsPressed" Value="true">
+                                                <Setter Property="Background" Value="#FF59271A" TargetName="Border"/>
+                                            </Trigger>
+                                            <Trigger Property="IsEnabled" Value="false">
+                                                <Setter Property="Background" Value="#FF2D90C1" TargetName="Border"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Grid   HorizontalAlignment="Right" Margin="0,0,448,411" Width="259"   Cursor="Hand"  Height="50" VerticalAlignment="Bottom" Visibility="Visible">
+                                <TextBox x:Name="tbMessageReceiveAddress" VerticalContentAlignment="Center" Text="12345678901"  BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" FontSize="24" Background="#FFABABAB"></TextBox>
+                            </Grid>
+
+                            <Button x:Name="btnSetMessagePhoneAddress" Click="btnSetMessagePhoneAddress_Click" Content="配置" HorizontalAlignment="Right" Margin="0,0,215,411" Width="170" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="19" Height="50" VerticalAlignment="Bottom"  Visibility="Visible">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
+                                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsPressed" Value="true">
+                                                <Setter Property="Background" Value="#FF59271A" TargetName="Border"/>
+                                            </Trigger>
+                                            <Trigger Property="IsEnabled" Value="false">
+                                                <Setter Property="Background" Value="#FF59275A" TargetName="Border"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button  Content="通知邮箱" HorizontalAlignment="Right" Margin="0,0,749,318" Width="170" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="19" Height="50" VerticalAlignment="Bottom" IsEnabled="False" Visibility="Visible">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
+                                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsPressed" Value="true">
+                                                <Setter Property="Background" Value="#FF59271A" TargetName="Border"/>
+                                            </Trigger>
+                                            <Trigger Property="IsEnabled" Value="false">
+                                                <Setter Property="Background" Value="#FF2D90C1" TargetName="Border"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Grid HorizontalAlignment="Right" Margin="0,0,427,318" Width="280" Background="#FF59275A" Height="50" VerticalAlignment="Bottom" Visibility="Visible">
+                                <TextBox x:Name="tbEmailReceiveAddress" VerticalContentAlignment="Center" Text="XXX@xxx.com" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" FontSize="24" Background="#FFABABAB"></TextBox>
+                            </Grid>
+                            <Button x:Name="btnSetEmailAddress" Click="btnSetEmailAddress_Click"  Content="配置" HorizontalAlignment="Right" Margin="0,0,215,318" Width="170" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="19" Height="50" VerticalAlignment="Bottom"  Visibility="Visible">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
+                                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsPressed" Value="true">
+                                                <Setter Property="Background" Value="#FF59271A" TargetName="Border"/>
+                                            </Trigger>
+                                            <Trigger Property="IsEnabled" Value="false">
+                                                <Setter Property="Background" Value="#FF59275A" TargetName="Border"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                        </Grid>
+                    </TabItem>
+
+                </TabControl>
+            </Grid>
+            <Grid Margin="0" Grid.Row="2">
+                <TextBlock HorizontalAlignment="Center" Height="23" Margin="361,33,227,0" TextWrapping="Wrap" Text="Copyright 2015 SuZhou Lung Care Medical Technologies Co.,Ltd.  All rights reserved." VerticalAlignment="Top" Width="610" Foreground="White"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,276 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style x:Key="personSubTabItem1Style" TargetType="{x:Type TabItem}">
+		<Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="Padding" Value="6,1,6,1"/>
+		<Setter Property="BorderBrush" Value="{StaticResource TabControlNormalBorderBrush}"/>
+		<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type TabItem}">
+					<Grid SnapsToDevicePixels="true">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="49*"/>
+							<ColumnDefinition Width="121*"/>
+						</Grid.ColumnDefinitions>
+						<Image Margin="8,4,2,6" Source="Images/12.jpg" Stretch="Fill"/>
+						<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="6,10,0,0" TextWrapping="Wrap" Text="我的资料" VerticalAlignment="Top" Width="101" FontSize="18.667" Foreground="#FF272727"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true"/>
+						<Trigger Property="IsSelected" Value="true">
+							<Setter Property="Panel.ZIndex" Value="1"/>
+						</Trigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="false"/>
+								<Condition Property="IsMouseOver" Value="true"/>
+							</MultiTrigger.Conditions>
+						</MultiTrigger>
+						<Trigger Property="TabStripPlacement" Value="Bottom"/>
+						<Trigger Property="TabStripPlacement" Value="Left"/>
+						<Trigger Property="TabStripPlacement" Value="Right"/>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Top"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-2,-1"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Bottom"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-1,-2,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Left"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-1,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Right"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-1,-2,-2,-2"/>
+						</MultiTrigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="personSubTabItem2Style" TargetType="{x:Type TabItem}">
+		<Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="Padding" Value="6,1,6,1"/>
+		<Setter Property="BorderBrush" Value="{StaticResource TabControlNormalBorderBrush}"/>
+		<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type TabItem}">
+					<Grid SnapsToDevicePixels="true">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="49*"/>
+							<ColumnDefinition Width="121*"/>
+						</Grid.ColumnDefinitions>
+						<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="6,10,0,0" TextWrapping="Wrap" Text="我的消息" VerticalAlignment="Top" Width="101" FontSize="18.667" Foreground="#FF272727"/>
+						<Image Margin="6,7,2,7" Source="Images/13.jpg" Stretch="Fill"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true"/>
+						<Trigger Property="IsSelected" Value="true">
+							<Setter Property="Panel.ZIndex" Value="1"/>
+						</Trigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="false"/>
+								<Condition Property="IsMouseOver" Value="true"/>
+							</MultiTrigger.Conditions>
+						</MultiTrigger>
+						<Trigger Property="TabStripPlacement" Value="Bottom"/>
+						<Trigger Property="TabStripPlacement" Value="Left"/>
+						<Trigger Property="TabStripPlacement" Value="Right"/>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Top"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-2,-1"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Bottom"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-1,-2,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Left"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-1,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Right"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-1,-2,-2,-2"/>
+						</MultiTrigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="personSunTabItem3Style" TargetType="{x:Type TabItem}">
+		<Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="Padding" Value="6,1,6,1"/>
+		<Setter Property="BorderBrush" Value="{StaticResource TabControlNormalBorderBrush}"/>
+		<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type TabItem}">
+					<Grid SnapsToDevicePixels="true">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="49*"/>
+							<ColumnDefinition Width="121*"/>
+						</Grid.ColumnDefinitions>
+						<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="6,10,0,0" TextWrapping="Wrap" Text="修改密码" VerticalAlignment="Top" Width="101" FontSize="18.667" Foreground="#FF272727"/>
+						<Image Margin="9,4,1,2" Source="Images/14.jpg" Stretch="Fill"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true"/>
+						<Trigger Property="IsSelected" Value="true">
+							<Setter Property="Panel.ZIndex" Value="1"/>
+						</Trigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="false"/>
+								<Condition Property="IsMouseOver" Value="true"/>
+							</MultiTrigger.Conditions>
+						</MultiTrigger>
+						<Trigger Property="TabStripPlacement" Value="Bottom"/>
+						<Trigger Property="TabStripPlacement" Value="Left"/>
+						<Trigger Property="TabStripPlacement" Value="Right"/>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Top"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-2,-1"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Bottom"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-1,-2,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Left"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-1,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Right"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-1,-2,-2,-2"/>
+						</MultiTrigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="personSubTabItemStyle" TargetType="{x:Type TabItem}">
+		<Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="Padding" Value="6,1,6,1"/>
+		<Setter Property="BorderBrush" Value="{StaticResource TabControlNormalBorderBrush}"/>
+		<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type TabItem}">
+					<Grid SnapsToDevicePixels="true" Background="#FF2E91D2">
+						<TextBlock HorizontalAlignment="Left" Height="33" Margin="10,7,0,0" TextWrapping="Wrap" Text="我的消息" VerticalAlignment="Top" Width="70" Foreground="#FFFFFBFB" FontSize="16"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true"/>
+						<Trigger Property="IsSelected" Value="true">
+							<Setter Property="Panel.ZIndex" Value="1"/>
+						</Trigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="false"/>
+								<Condition Property="IsMouseOver" Value="true"/>
+							</MultiTrigger.Conditions>
+						</MultiTrigger>
+						<Trigger Property="TabStripPlacement" Value="Bottom"/>
+						<Trigger Property="TabStripPlacement" Value="Left"/>
+						<Trigger Property="TabStripPlacement" Value="Right"/>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Top"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-2,-1"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Bottom"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-1,-2,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Left"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-2,-2,-1,-2"/>
+						</MultiTrigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="IsSelected" Value="true"/>
+								<Condition Property="TabStripPlacement" Value="Right"/>
+							</MultiTrigger.Conditions>
+							<Setter Property="Margin" Value="-1,-2,-2,-2"/>
+						</MultiTrigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<!-- 应该在此定义资源字典条目。-->
+</ResourceDictionary>

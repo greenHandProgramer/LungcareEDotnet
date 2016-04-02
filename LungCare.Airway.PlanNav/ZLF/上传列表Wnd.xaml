@@ -1,0 +1,169 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LungCare.SupportPlatform.UI"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" xmlns:ThemedControlsLibrary="clr-namespace:ThemedControlsLibrary;assembly=ThemedControlsLibrary" x:Class="LungCare.SupportPlatform.UI.上传列表Wnd"
+        mc:Ignorable="d"
+        Title="上传列表Wnd" Height="521" Width="1336" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" WindowStyle="None" Padding="13,12,7,11">
+    <Window.Resources>
+        <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
+        <Style TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="IsHitTestVisible" Value="False" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+        <Style x:Key="{x:Type ListViewItem}" TargetType="ListViewItem">
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border Name="Border" Padding="2" SnapsToDevicePixels="true" Background="Transparent">
+                            <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView x:Name="listView" Height="398" Margin="7,50,11,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontSize="26.667" BorderThickness="0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="170" Header="时间">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False" Content="时间" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" IsHitTestVisible="False" />
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="{Binding 时间}" HorizontalAlignment="Center" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="170" Header="单号">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label  Focusable="False" Content="单号" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" IsHitTestVisible="False" />
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="{Binding 单号}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="170" Header="患者姓名">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="患者姓名" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" IsHitTestVisible="False"/>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="{Binding 患者姓名}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="170" Header="性别">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="性别" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" IsHitTestVisible="False"/>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label  Focusable="False" Content="{Binding 性别}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="170" Header="年龄">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="年龄" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" IsHitTestVisible="False"/>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="{Binding 年龄}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="170" Header="状态">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label  Focusable="False" Content="状态" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" IsHitTestVisible="False"/>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label  Focusable="False" Content="{Binding 状态}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="170" Header="查看详情">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label  Focusable="False" Content="查看详情" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="160" />
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Width="150" Content="ABC"/>-->
+                                <ThemedControlsLibrary:LinkLabel Focusable="False"  x:Name="linkLabel" Tag="{Binding 单号}" Content="查看" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="160" Click="linkLabel_Click"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+            <!--<local:上传列表Entity 年龄="67" 状态="已提交" 单号="15092001" 性别="女" 患者姓名="汪欣琳" 时间="2015/09/20"/>
+            <local:上传列表Entity 年龄="58" 状态="已提交" 单号="15092002" 性别="男" 患者姓名="张阳" 时间="2015/09/21"/>-->
+        </ListView>
+        <Button x:Name="buttonLogin" Content="上一页" HorizontalAlignment="Right" Margin="0,0,171,12" Width="137" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="19" Height="37" VerticalAlignment="Bottom" Click="buttonLogin_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Background" Value="#FF59271A" TargetName="Border"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttonLogin_Copy" Content="下一页" HorizontalAlignment="Right" Margin="0,0,11,12" Width="137" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="19" Height="37" VerticalAlignment="Bottom">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Background" Value="#FF59271A" TargetName="Border"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Border CornerRadius="7" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="35" Margin="763,10,0,0" VerticalAlignment="Top" Width="429">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Height="32" Name="textBox1" HorizontalAlignment="Left" Width="388" Background="{x:Null}" BorderThickness="0" FontSize="20" Margin="5,1,0,0" MaxLines="1" MaxLength="20" />
+                <Image Width="30" Height="30" Source="search.png" Cursor="Hand" ToolTip="搜索"/>
+            </StackPanel>
+            
+        </Border>
+
+    </Grid>
+
+</Window>

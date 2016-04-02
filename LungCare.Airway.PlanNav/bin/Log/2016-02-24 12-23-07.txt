@@ -1,0 +1,3 @@
+2016-02-24 12-23-07
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 LungCare.Airway.WinformUIControls.CTViewControlMA.SaveLesion() 位置 e:\LX\ma\LungCare.Airway.PlanNav\Views\Examination\Ma\Control\CTViewControlMA.cs:行号 3047

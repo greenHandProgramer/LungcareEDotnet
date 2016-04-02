@@ -1,0 +1,103 @@
+﻿<Window 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:LungCare_Airway_PlanNav" mc:Ignorable="d"
+    xmlns:vtk="clr-namespace:Kitware.VTK;assembly=Kitware.VTK"
+	x:Class="LungCare_Airway_PlanNav.Register"
+	x:Name="Window"
+	Title="Register" ResizeMode="NoResize"
+	Width="1000" Height="670" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="False" >
+    <Window.Resources>
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ButtonNormalBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Viewbox Margin="0">
+                            <Border x:Name="border" BorderBrush="White" BorderThickness="1" Height="100" Width="100" CornerRadius="5" Background="#7F3E7FFF">
+                                <Grid x:Name="grid">
+
+                                    <Path x:Name="path" Data="F1M1355.27,1727.8L1346.08,1727.8C1346.06,1726.48 1346.05,1725.67 1346.05,1725.38 1346.05,1722.41 1346.54,1719.96 1347.52,1718.04 1348.51,1716.12 1350.47,1713.96 1353.43,1711.56 1356.38,1709.16 1358.14,1707.58 1358.72,1706.84 1359.61,1705.66 1360.05,1704.37 1360.05,1702.95 1360.05,1700.98 1359.27,1699.29 1357.7,1697.89 1356.12,1696.49 1354,1695.78 1351.34,1695.78 1348.77,1695.78 1346.62,1696.52 1344.89,1697.98 1343.16,1699.44 1341.98,1701.68 1341.33,1704.68L1332.04,1703.53C1332.3,1699.23 1334.13,1695.58 1337.53,1692.58 1340.93,1689.58 1345.38,1688.08 1350.91,1688.08 1356.72,1688.08 1361.34,1689.6 1364.77,1692.63 1368.21,1695.67 1369.92,1699.2 1369.92,1703.24 1369.92,1705.47 1369.29,1707.58 1368.03,1709.58 1366.77,1711.57 1364.08,1714.28 1359.95,1717.71 1357.81,1719.49 1356.48,1720.92 1355.97,1722 1355.45,1723.08 1355.22,1725.01 1355.27,1727.8z M1346.08,1741.41L1346.08,1731.29 1356.2,1731.29 1356.2,1741.41 1346.08,1741.41z" Stretch="Uniform" Fill="#FFFFFFFF" Width="Auto" Height="Auto" Margin="15" RenderTransformOrigin="0.5,0.5">
+                                        <Path.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup>
+                                        </Path.RenderTransform>
+                                    </Path>
+
+                                </Grid>
+                            </Border>
+                        </Viewbox>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#FF3E7FFF"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#CC003FBC"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true"/>
+                            <Trigger Property="ToggleButton.IsChecked" Value="true"/>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                                <Setter Property="Background" TargetName="border" Value="#FF7A7A7A"/>
+                                <Setter Property="Fill" TargetName="path" Value="#FFC8C8C8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Storyboard x:Key="OnMouseLeftButtonDown1"/>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown"/>
+    </Window.Triggers>
+    <Border BorderBrush="Black" BorderThickness="1" Background="#FF272727">
+        <Grid Name="gd" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="0.917*"/>
+            </Grid.RowDefinitions>
+            <Border x:Name="headBorder" BorderBrush="#FF5A5A5A" BorderThickness="1">
+                <Grid Margin="0" Background="#FF59275A" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="680"/>
+                        <ColumnDefinition Width="0.502*" />
+                        <ColumnDefinition Width="0.389*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="image" Margin="0,0,432,0" Source="/LungCare.Airway.PlanNav;component/Images/4.jpg" Stretch="UniformToFill" Visibility="Visible" />
+                    <Button x:Name="btnExit" Click="btnExit_Click" Content="Button" Grid.Column="2" HorizontalAlignment="Left" Height="56" Margin="29,14,0,0" VerticalAlignment="Top" Width="64" Style="{DynamicResource ButtonStyle3}"/>
+
+                </Grid>
+            </Border>
+            <Grid Margin="-2,0,2,0" Grid.Row="1">
+                <TextBlock HorizontalAlignment="Left" Height="58" Margin="333,26,0,0" TextWrapping="Wrap" Text="注册新用户：" VerticalAlignment="Top" Width="301" Foreground="White" FontSize="48"/>
+                <TextBlock HorizontalAlignment="Left" Height="42" Margin="307,151,0,0" TextWrapping="Wrap" Text="手机号码：" VerticalAlignment="Top" Width="103" Foreground="White" FontSize="18.667"/>
+                <TextBlock HorizontalAlignment="Left" Height="42" Margin="332,209,0,0" TextWrapping="Wrap" Text="密  码：" VerticalAlignment="Top" Width="78" Foreground="White" FontSize="18.667"/>
+                <TextBox x:Name="tbTelephone" HorizontalAlignment="Left" Height="40" Margin="428,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="18.667"/>
+                <PasswordBox x:Name="tbPassword" HorizontalAlignment="Left" Height="40" Margin="428,206,0,0"  VerticalAlignment="Top" Width="184" FontSize="18.667"/>
+
+                <Button x:Name="btnRegist" Content="注   册" Click="btnRegist_Click" HorizontalAlignment="Left" Height="42" Margin="331,523,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="3.338,1.389" Style="{DynamicResource RegistButtonStyle}"/>
+                <Button x:Name="btnCancel" Content="取   消" Click="btnCancel_Click" HorizontalAlignment="Left" Height="42" Margin="506,523,0,0" VerticalAlignment="Top" Width="103" Style="{DynamicResource RegistCancelButtonStyle}"/>
+                <TextBlock HorizontalAlignment="Left" Height="42" Margin="331,267,0,0" TextWrapping="Wrap" Text="姓  名：" VerticalAlignment="Top" Width="78" Foreground="White" FontSize="18.667"/>
+                <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="40" Margin="428,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="18.667"/>
+                <TextBlock HorizontalAlignment="Left" Height="42" Margin="332,321,0,0" TextWrapping="Wrap" Text="医  院：" VerticalAlignment="Top" Width="78" Foreground="White" FontSize="18.667"/>
+                <TextBox x:Name="tbHospital" HorizontalAlignment="Left" Height="40" Margin="428,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="18.667"/>
+                <TextBlock HorizontalAlignment="Left" Height="32" Margin="332,375,0,0" TextWrapping="Wrap" Text="科  室：" VerticalAlignment="Top" Width="78" Foreground="White" FontSize="18.667"/>
+                <TextBox x:Name="tbDepartment" HorizontalAlignment="Left" Height="40" Margin="428,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="18.667"/>
+                <TextBlock HorizontalAlignment="Left" Height="32" Margin="286,443,0,0" TextWrapping="Wrap" Text="从医资格证：" VerticalAlignment="Top" Width="115" Foreground="White" FontSize="18.667"/>
+                <Button x:Name="btnSelectFile" Click="btnSelectFile_Click" Content="选择文件" HorizontalAlignment="Left" Margin="429,437,0,0" VerticalAlignment="Top" Width="180" Height="41" Style="{DynamicResource RegistSelectFileButtonStyle}"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

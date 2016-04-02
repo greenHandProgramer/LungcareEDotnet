@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{725BF5AB-100A-4953-A352-5008BAAC53A9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>LungCare_Airway_PlanNav</DefaultClrNameSpace>
+    <RootNamespace>LungCare.SupportPlatform</RootNamespace>
+    <AssemblyName>LungCare.Airway.PlanNav</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>lungcare_bg.ico</ApplicationIcon>
+    <Utf8Output>true</Utf8Output>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClearCanvas.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearCanvas.Desktop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearCanvas.Dicom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.Dicom.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearCanvas.ImageViewer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.ImageViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearCanvas.ImageViewer.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.ImageViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearCanvas.ImageViewer.Explorer.Dicom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.ImageViewer.Explorer.Dicom.dll</HintPath>
+    </Reference>
+    <Reference Include="ClearCanvas.ImageViewer.StudyFinders.Remote, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ClearCanvas.ImageViewer.StudyFinders.Remote.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.Jxdw.Helper">
+      <HintPath>..\..\CTRefineApp\CTRefineApp\bin\Debug\Com.Jxdw.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dicom, Version=1.0.31.0, Culture=neutral, PublicKeyToken=3a13f649e28eb09a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Fo-Dicom\fo-dicom-master\DICOM\bin\Debug\Dicom.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitware.mummy.Runtime">
+      <HintPath>..\..\CTRefineApp\CTRefineApp\bin\Debug\Kitware.mummy.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitware.VTK">
+      <HintPath>..\..\CTRefineApp\CTRefineApp\bin\Debug\Kitware.VTK.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Office.Interop.Graph, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Release\Microsoft.Office.Interop.Graph.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Release\Microsoft.Office.Interop.PowerPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Release\office.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="RibbonMenuControl">
+      <HintPath>..\..\CTRefineApp\CTRefineApp\bin\Debug\RibbonMenuControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ThemedControlsLibrary">
+      <HintPath>..\..\..\Chrome\Download\Themed Controls Library\ThemedControlsLibrary\bin\Debug\ThemedControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Entities\DataItemFilePair.cs" />
+    <Compile Include="Entities\DataListItemArgs.cs" />
+    <Compile Include="Entities\DicomSnapshotEntity.cs" />
+    <Compile Include="Entities\DicomSnapshotEventArgs.cs" />
+    <Compile Include="Entities\DicomSnapshotEntities.cs" />
+    <Compile Include="Entities\DataListItemEntities.cs" />
+    <Compile Include="Entities\LesionEntities.cs" />
+    <Compile Include="Entities\LesionEntity.cs" />
+    <Compile Include="Entities\OrientationEnum.cs" />
+    <Compile Include="Entities\PositionChangedEventArgs.cs" />
+    <Compile Include="Entities\RectangleEntity.cs" />
+    <Compile Include="Entities\SegemntFileEventArgs.cs" />
+    <Compile Include="Entities\UI\CheckTreeViewItem.cs" />
+    <Compile Include="Entities\UI\FooViewModel.cs" />
+    <Compile Include="Entities\UI\VirtualToggleButton.cs" />
+    <Compile Include="Entities\WindowWidthLevelArgs.cs" />
+    <Compile Include="SupportPlatformDAO\Airway\AirwayDAO.cs" />
+    <Compile Include="SupportPlatformDAO\LocalDicom\LocalDicomDAO.cs" />
+    <Compile Include="SupportPlatformDAO\UI\ListViewDAO.cs" />
+    <Compile Include="SupportPlatformDAO\UI\Utils.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\LoggerEntity.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\PowerPointDAO.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\ProducePPT.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\UserCacheUtil.cs" />
+    <Compile Include="SupportPlatformService\ExaminationPPTService.cs" />
+    <Compile Include="UI\UserControls\Common\CCUpDownFile.xaml.cs" />
+    <Compile Include="UI\UserControls\Common\DataListItemListUserControl.xaml.cs">
+      <DependentUpon>DataListItemListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Common\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Windows\Common\AboutWindow.Designer.cs" />
+    <Compile Include="UI\UserControls\Common\CTViewControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Common\CTViewControl3.designer.cs" />
+    <Compile Include="Entities\AirwayPatient.cs" />
+    <Compile Include="Entities\AirwayPatientOrder.cs" />
+    <Compile Include="Entities\AirwayPatients.cs" />
+    <Compile Include="Entities\LineEntity.cs" />
+    <Compile Include="SupportPlatformDAO\Validation\Class1.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\ArrowOutlinedPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\ArrowPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\CornerAnnotationActorPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\CrossPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\IVisibilityPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\LinePackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\OrientationPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\RendererPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\SpherePackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\TubePackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\Vector3.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\VTKUtil.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\VTKUtilExtend.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\WatermarkPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\XmlPolyDataPackage.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\Class1.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\FastImageDataFetcherShort.cs" />
+    <Compile Include="SupportPlatformDAO\VTK\FastImageDataFetcherUChar.cs" />
+    <Compile Include="SupportPlatformDAO\Files\FileOperation.cs" />
+    <Compile Include="Layout\SideBySideByUpDownSubViewLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\SideBySideByUpDownSubViewLayout.Designer.cs" />
+    <Compile Include="Layout\SideBySideLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\SideBySideLayout.Designer.cs" />
+    <Compile Include="Layout\ThreePartView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\ThreePartView.Designer.cs" />
+    <Compile Include="SupportPlatformDAO\Logs\Logger.cs" />
+    <Compile Include="SupportPlatformDAO\MESPUpload.cs" />
+    <Compile Include="SupportPlatformDAO\MESPDownloadUpload.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\OrderCompare.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\PositionOperation.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Common\Tabitem-dingdanliebiao.xaml.cs" />
+    <Compile Include="UI\UserControls\Common\Tabitem-peizhiliebiao.xaml.cs" />
+    <Compile Include="UI\UserControls\Common\Tabitem-yonghuliebiao.xaml.cs" />
+    <Compile Include="UI\UserControls\Common\tabitem-yonghushenhe.xaml.cs" />
+    <Compile Include="UI\UserControls\Common\Tabitem-zhengshushenhe.xaml.cs" />
+    <Compile Include="ThirdPartUIControls\ButtonEx\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThirdPartUIControls\ButtonEx\ButtonSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThirdPartUIControls\ButtonEx\ControlState.cs" />
+    <Compile Include="ThirdPartUIControls\ButtonEx\GraphicsPathHelper.cs" />
+    <Compile Include="ThirdPartUIControls\ButtonEx\RoundStyle.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\ControlPaintEx.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\FusionTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThirdPartUIControls\TrackBarEx\ImageDc.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\InterpolationModeGraphics.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\NativeMethods.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\PaintThumbEventArgs.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\PaintTickEventArgs.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\RegionHelper.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\RenderHelper.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\SmoothingModeGraphics.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TextRenderingHintGraphics.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\ThumbArrowDirection.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TrackBarColorTable.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TrackBarDrawItemEventArgs.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TrackBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TrackBarItemState.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TrackBarOwnerDrawnParts.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\TrackDrawModeEditor.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\ClassName.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Helper.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\NativeMethods.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\AC.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\CDDS.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\CDRF.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\GWL.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\HWND.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\ICC.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\LPSTR.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\NM.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\SWP.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TBM.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TTDT.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TTF.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TTI.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TTM.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TTN.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\TTS.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\VK.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\WM.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\WS.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Const\WS_EX.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Enum\TRACKMOUSEEVENT_FLAGS.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\BLENDFUNCTION.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\INITCOMMONCONTROLSEX.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\NMCUSTOMDRAW.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\NMHDR.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\NMTTCUSTOMDRAW.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\NMTTDISPINFO.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\PAINTSTRUCT.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\POINT.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\RECT.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\TOOLINFO.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\TRACKMOUSEEVENT.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Struct\TT_HITTESTINFO.cs" />
+    <Compile Include="ThirdPartUIControls\TrackBarEx\Win32\Result.cs" />
+    <Compile Include="UI\UserControls\Common\ToggleBtn.xaml.cs" />
+    <Compile Include="UI\UserControls\Common\TrackbarUserControl.xaml.cs" />
+    <Compile Include="SupportPlatformDAO\Utils\Network.cs" />
+    <Compile Include="UI\UserControls\Examination\CTViewControlSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Examination\CTViewControlSingle.designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Examination\DownloadListUserControlMA.xaml.cs">
+      <DependentUpon>DownloadListUserControlMA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Examination\DataListItemListUserControl.xaml.cs">
+      <DependentUpon>DataListItemListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SupportPlatformDAO\Files\FileDAO.cs" />
+    <Compile Include="UI\Windows\Common\MainDataWindow.xaml.cs">
+      <DependentUpon>MainDataWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\DownloadListWindow.xaml1.cs" />
+    <Compile Include="UI\Windows\Examination\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupportPlatformDAO\Images\ImageOperation.cs" />
+    <Compile Include="UI\Windows\Examination\ImportDicomWindow1.xaml.cs" />
+    <Compile Include="UI\Windows\Examination\ImportDicomWindow.xaml.cs" />
+    <Compile Include="UI\Windows\Common\ImportDicomWindow3.xaml.cs" />
+    <Compile Include="UI\Windows\Examination\ImportDicomWindow2.xaml.cs" />
+    <Compile Include="UI\Windows\Examination\ImportWindow.xaml.cs" />
+    <Compile Include="SupportPlatformDAO\LoginAndUploadFileDAO.cs" />
+    <Compile Include="UI\UserControls\Examination\SnapshotUserControl.xaml.cs">
+      <DependentUpon>SnapshotUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\DownloadListWindow.xaml.cs" />
+    <Compile Include="UI\Windows\Examination\LoginWnd.xaml.cs">
+      <DependentUpon>LoginWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\SnapshotWindow.xaml.cs" />
+    <Compile Include="UI\Windows\Examination\AllLesionWindow.xaml.cs" />
+    <Compile Include="UI\UserControls\Examination\CTViewControlMA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Examination\CTViewControlMA.designer.cs" />
+    <Compile Include="UI\UserControls\Examination\LesionButtonUserControl.xaml.cs" />
+    <Compile Include="UI\UserControls\Examination\MaDownloadListUserControl.xaml.cs">
+      <DependentUpon>MaDownloadListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\MainWindowMA.xaml.cs" />
+    <Compile Include="UI\Windows\Examination\MaWindow.xaml.cs">
+      <DependentUpon>MaWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\StartWindow.xaml.cs">
+      <DependentUpon>StartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Examination\MAUploadListUserControl.xaml.cs">
+      <DependentUpon>MAUploadListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\UploadProgressWndResultMA.xaml.cs">
+      <DependentUpon>UploadProgressWndResultMA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Examination\UploadProgressWndMA.xaml.cs">
+      <DependentUpon>UploadProgressWndMA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Common\VideoPlayer.xaml.cs" />
+    <Compile Include="UI\Windows\Admin\AdminWindow.xaml.cs" />
+    <Compile Include="SupportPlatformDAO\VMTKs\VMTKUtil.cs" />
+    <Compile Include="UI\Windows\Service\ServiceListWnd.xaml.cs">
+      <DependentUpon>ServiceListWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Admin\AdminWnd.xaml.cs">
+      <DependentUpon>AdminWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Admin\UserWindow.xaml.cs">
+      <DependentUpon>UserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Admin\UserCertificateCheckWindow.xaml.cs">
+      <DependentUpon>UserCertificateCheckWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Admin\OrderItemWindow.xaml.cs">
+      <DependentUpon>OrderItemWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Controls\FileItemUserControl1.xaml.cs">
+      <DependentUpon>FileItemUserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Controls\UploadFileUserControl.xaml.cs">
+      <DependentUpon>UploadFileUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Controls\FileItemUserControl.xaml.cs">
+      <DependentUpon>FileItemUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Controls\UploadProgressWnd.xaml.cs">
+      <DependentUpon>UploadProgressWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\FastImageDataFetcher.cs" />
+    <Compile Include="ZLF\ImageWindow.xaml.cs">
+      <DependentUpon>ImageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Admin\NotificationWindow.xaml.cs">
+      <DependentUpon>NotificationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\MainWindowMA.cs" />
+    <Compile Include="ZLF\PatientMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZLF\PatientMgrForm.designer.cs" />
+    <Compile Include="ZLF\RegistryDAO.cs" />
+    <Compile Include="ZLF\UIUtil.cs" />
+    <Compile Include="ZLF\WebAPIEntity\AskForgetPasswordVerifCode.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Certificate\UploadCertificateByAdmin.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Feedback.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Notification.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Certificate.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Certificate\GetCertificateApproveStatus.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Certificate\GetCertiWaitingApprovedUserNames.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Certificate\UpdateCertificateApproveStatus.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Order\CancelOrder.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Order\CancelOrders.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Order\DeleteOrderDicomFile.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Order\RetrieveDataList.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Order\UpdateData.cs" />
+    <Compile Include="ZLF\WebAPIEntity\ResetPassword.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Order\DeleteOrderDealFile.cs" />
+    <Compile Include="ZLF\WebAPIEntity\SendPhoneMessage.cs" />
+    <Compile Include="ZLF\WebAPIEntity\Task\CompleteTask.cs" />
+    <Compile Include="ZLF\WebAPIEntity\UpdateUserInfoRequest.cs" />
+    <Compile Include="ZLF\WebAPIEntity\UserIcon.cs" />
+    <Compile Include="WindowNative\ChangeWindowSize.cs" />
+    <Compile Include="WindowNative\HitTest.cs" />
+    <Compile Include="WindowNative\NativeMethods.cs" />
+    <Compile Include="ZLF\Security\SessionManager.cs" />
+    <Compile Include="SupportPlatformDAO\Validation\NotNullValidationRule.cs" />
+    <Compile Include="UI\Windows\Common\ExitForm.xaml.cs" />
+    <Compile Include="UI\Windows\Common\Loading.xaml.cs" />
+    <Compile Include="UI\Windows\Common\MsgWindow1.xaml.cs" />
+    <Compile Include="UI\Windows\Common\MediaPlay.xaml.cs" />
+    <Compile Include="websocket-sharp\ByteOrder.cs" />
+    <Compile Include="websocket-sharp\CloseEventArgs.cs" />
+    <Compile Include="websocket-sharp\CloseStatusCode.cs" />
+    <Compile Include="websocket-sharp\CompressionMethod.cs" />
+    <Compile Include="websocket-sharp\ErrorEventArgs.cs" />
+    <Compile Include="websocket-sharp\Ext.cs" />
+    <Compile Include="websocket-sharp\Fin.cs" />
+    <Compile Include="websocket-sharp\HttpBase.cs" />
+    <Compile Include="websocket-sharp\HttpRequest.cs" />
+    <Compile Include="websocket-sharp\HttpResponse.cs" />
+    <Compile Include="websocket-sharp\LogData.cs" />
+    <Compile Include="websocket-sharp\Logger.cs" />
+    <Compile Include="websocket-sharp\LogLevel.cs" />
+    <Compile Include="websocket-sharp\Mask.cs" />
+    <Compile Include="websocket-sharp\MessageEventArgs.cs" />
+    <Compile Include="websocket-sharp\Net\AuthenticationBase.cs" />
+    <Compile Include="websocket-sharp\Net\AuthenticationChallenge.cs" />
+    <Compile Include="websocket-sharp\Net\AuthenticationResponse.cs" />
+    <Compile Include="websocket-sharp\Net\AuthenticationSchemes.cs" />
+    <Compile Include="websocket-sharp\Net\Chunk.cs" />
+    <Compile Include="websocket-sharp\Net\ChunkedRequestStream.cs" />
+    <Compile Include="websocket-sharp\Net\ChunkStream.cs" />
+    <Compile Include="websocket-sharp\Net\ClientSslConfiguration.cs" />
+    <Compile Include="websocket-sharp\Net\Cookie.cs" />
+    <Compile Include="websocket-sharp\Net\CookieCollection.cs" />
+    <Compile Include="websocket-sharp\Net\CookieException.cs" />
+    <Compile Include="websocket-sharp\Net\EndPointListener.cs" />
+    <Compile Include="websocket-sharp\Net\EndPointManager.cs" />
+    <Compile Include="websocket-sharp\Net\HttpBasicIdentity.cs" />
+    <Compile Include="websocket-sharp\Net\HttpConnection.cs" />
+    <Compile Include="websocket-sharp\Net\HttpDigestIdentity.cs" />
+    <Compile Include="websocket-sharp\Net\HttpHeaderInfo.cs" />
+    <Compile Include="websocket-sharp\Net\HttpHeaderType.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListener.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerAsyncResult.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerContext.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerException.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerPrefix.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerPrefixCollection.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerRequest.cs" />
+    <Compile Include="websocket-sharp\Net\HttpListenerResponse.cs" />
+    <Compile Include="websocket-sharp\Net\HttpRequestHeader.cs" />
+    <Compile Include="websocket-sharp\Net\HttpResponseHeader.cs" />
+    <Compile Include="websocket-sharp\Net\HttpStatusCode.cs" />
+    <Compile Include="websocket-sharp\Net\HttpStreamAsyncResult.cs" />
+    <Compile Include="websocket-sharp\Net\HttpUtility.cs" />
+    <Compile Include="websocket-sharp\Net\HttpVersion.cs" />
+    <Compile Include="websocket-sharp\Net\InputChunkState.cs" />
+    <Compile Include="websocket-sharp\Net\InputState.cs" />
+    <Compile Include="websocket-sharp\Net\LineState.cs" />
+    <Compile Include="websocket-sharp\Net\NetworkCredential.cs" />
+    <Compile Include="websocket-sharp\Net\QueryStringCollection.cs" />
+    <Compile Include="websocket-sharp\Net\ReadBufferState.cs" />
+    <Compile Include="websocket-sharp\Net\RequestStream.cs" />
+    <Compile Include="websocket-sharp\Net\ResponseStream.cs" />
+    <Compile Include="websocket-sharp\Net\ServerSslConfiguration.cs" />
+    <Compile Include="websocket-sharp\Net\SslConfiguration.cs" />
+    <Compile Include="websocket-sharp\Net\WebHeaderCollection.cs" />
+    <Compile Include="websocket-sharp\Net\WebSockets\HttpListenerWebSocketContext.cs" />
+    <Compile Include="websocket-sharp\Net\WebSockets\TcpListenerWebSocketContext.cs" />
+    <Compile Include="websocket-sharp\Net\WebSockets\WebSocketContext.cs" />
+    <Compile Include="websocket-sharp\Opcode.cs" />
+    <Compile Include="websocket-sharp\PayloadData.cs" />
+    <Compile Include="websocket-sharp\Rsv.cs" />
+    <Compile Include="websocket-sharp\Server\HttpRequestEventArgs.cs" />
+    <Compile Include="websocket-sharp\Server\HttpServer.cs" />
+    <Compile Include="websocket-sharp\Server\IWebSocketSession.cs" />
+    <Compile Include="websocket-sharp\Server\ServerState.cs" />
+    <Compile Include="websocket-sharp\Server\WebSocketBehavior.cs" />
+    <Compile Include="websocket-sharp\Server\WebSocketServer.cs" />
+    <Compile Include="websocket-sharp\Server\WebSocketServiceHost.cs" />
+    <Compile Include="websocket-sharp\Server\WebSocketServiceHost`1.cs" />
+    <Compile Include="websocket-sharp\Server\WebSocketServiceManager.cs" />
+    <Compile Include="websocket-sharp\Server\WebSocketSessionManager.cs" />
+    <Compile Include="websocket-sharp\WebSocket.cs" />
+    <Compile Include="websocket-sharp\WebSocketException.cs" />
+    <Compile Include="websocket-sharp\WebSocketFrame.cs" />
+    <Compile Include="websocket-sharp\WebSocketState.cs" />
+    <Compile Include="ZLF\Controls\DownloadListUserControl.xaml.cs">
+      <DependentUpon>DownloadListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Controls\UploadListUserControl.xaml.cs">
+      <DependentUpon>UploadListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\Dicom成功上传.xaml.cs">
+      <DependentUpon>Dicom成功上传.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\ForgetPasswordWnd.xaml.cs">
+      <DependentUpon>ForgetPasswordWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\LoginWnd.xaml.cs">
+      <DependentUpon>LoginWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\MsgWindow.xaml.cs">
+      <DependentUpon>MsgWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\RSACryptoService.cs" />
+    <Compile Include="ZLF\Security\TokenManager.cs" />
+    <Compile Include="ZLF\SignupWnd.xaml.cs">
+      <DependentUpon>SignupWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\WebAPIEntity\CTDicomInfo.cs" />
+    <Compile Include="ZLF\WebAPIEntity\GeneralResponse.cs" />
+    <Compile Include="ZLF\WebAPIEntity\UserInfo.cs" />
+    <Compile Include="ZLF\WebAPIEntity\User\DeleteUser.cs" />
+    <Compile Include="ZLF\WebAPIEntity\User\GetUserInfo.cs" />
+    <Compile Include="ZLF\WebAPIEntity\User\GetUserNames.cs" />
+    <Compile Include="ZLF\WebAPIEntity\User\GetSignupVerifyCode.cs" />
+    <Compile Include="ZLF\WebAPIEntity\User\Login.cs" />
+    <Compile Include="ZLF\WebAPIEntity\User\Signup.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Certificate\UploadCertificateByAdminWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\EmailWork.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\DeleteOrderDicomFileWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\DeleteOrderDealFileWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\RetrieveAllOrdersInSystemWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\SendPhoneMessageWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Task\CompleteTaskWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\AskForgetPasswordVerifCodeWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Certificate\GetCertificateApproveStatusWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Certificate\GetCertiWaitingApprovedUserNamesWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Certificate\UpdateCertificateApproveStatusWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\File\DownloadFileWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\File\UploadFileWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\CancelOrdersWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\CancelOrderWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\RetrieveDataListWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Order\UpdateDataWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\GetSignupVerifyCodeWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\FeedbackWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\DeleteUserWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\GetAllUserinfoWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\GetUserInfoWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\NotificationsWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\ResetPasswordByVerifyCodeWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\UpdateUserInfoWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\RetrieveUserInfoWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Certificate\UploadCertificateWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Certificate\DownloadCertificateWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\DownloadUserIconWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\UploadUserIconWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\GetUserNamesWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\LoginWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\User\SignupWorker.cs" />
+    <Compile Include="ZLF\WebAPIWorkers\Util.cs" />
+    <Compile Include="ZLF\上传列表Wnd.xaml.cs">
+      <DependentUpon>上传列表Wnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\提示医师资格证审核失败Wnd.xaml.cs">
+      <DependentUpon>提示医师资格证审核失败Wnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLF\提示没有上传医师资格证Wnd.xaml.cs">
+      <DependentUpon>提示没有上传医师资格证Wnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SupportPlatformDAO\解刨点Index.cs" />
+    <Page Include="Style\btn-video-back.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\btn-video-exit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\btn-video-start.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\btn-video-stretch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\btn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\btn2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\btntest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\changeImageButtonStyleDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\CCNavigation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\datagridColumnheader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dictionary\AllStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dictionary\CheckBoxDic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\personSubButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\personSubTabItem1Dic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\RegistCancel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\RegisterDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\RegistSelectFileDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\service-about.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\service-gengxin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\checkbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\service-tab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\service-yijian.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\signAndLoginBtn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\StartStopDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\StartStopDic1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\CCUpDownFile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\DataListItemListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\Tabitem-dingdanliebiao.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\tabitem-navigate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\Tabitem-peizhiliebiao.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\Tabitem-yonghuliebiao.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\tabitem-yonghushenhe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\Tabitem-zhengshushenhe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\textBoxValidate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\ToggleBtn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\ToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Common\TrackbarUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\uploadDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\uploadList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\uploadlistDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\uploadProgressDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Examination\DownloadListUserControlMA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Examination\DataListItemListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\MainDataWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\DownloadListWindow1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\ImportDicomWindow1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\ImportDicomWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\ImportDicomWindow3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\ImportDicomWindow2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\ImportWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Examination\SnapshotUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Windows\Examination\DownloadListWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\LoginWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\SnapshotWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\AllLesionWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Examination\LesionButtonUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\UserControls\Examination\MaDownloadListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\MainWindowMA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\MaWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\StartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserControls\Examination\MAUploadListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\UploadProgressWndResultMA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Examination\UploadProgressWndMA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\ExitForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\Loading.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\MsgWindow1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\CCNavigation.xaml.cs">
+      <DependentUpon>CCNavigation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\Common\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UI\Windows\Common\MediaPlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Common\VideoPlayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Admin\AdminWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Windows\Service\ServiceListWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Admin\AdminWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Admin\UserWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Admin\UserCertificateCheckWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Admin\OrderItemWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Controls\DownloadListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Controls\FileItemUserControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Controls\UploadFileUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZLF\Controls\FileItemUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Controls\UploadListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Controls\UploadProgressWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Dicom成功上传.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\ForgetPasswordWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\LoginWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\ImageWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\Admin\NotificationWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\MsgWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\SignupWnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\上传列表Wnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\提示医师资格证审核失败Wnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZLF\提示没有上传医师资格证Wnd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <None Include="App.config" />
+    <None Include="Application.ico">
+      <Visible>false</Visible>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1-1.jpg" />
+    <Resource Include="Images\10.jpg" />
+    <Resource Include="Images\11.jpg" />
+    <Resource Include="Images\12.jpg" />
+    <Resource Include="Images\13.jpg" />
+    <Resource Include="Images\14.jpg" />
+    <Resource Include="Images\15.jpg" />
+    <Resource Include="Images\2015-10-13_16-55-50.png" />
+    <Resource Include="Images\2015-10-13_16-58-20.png" />
+    <Resource Include="Images\2015-10-13_16-59-47.png" />
+    <Resource Include="Images\2015-10-13_17-00-47.png" />
+    <Resource Include="Images\2015-10-13_17-02-08.png" />
+    <Resource Include="Images\8.jpg" />
+    <Resource Include="Images\9.jpg" />
+    <Resource Include="Images\lungcare_brand.png" />
+    <Resource Include="Images\Media-Pause.png" />
+    <Resource Include="Images\Media-Play.png" />
+    <Resource Include="Images\TbItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nosignal.png" />
+    <Resource Include="Images\signal-strength-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.jpg" />
+    <Resource Include="Images\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6.jpg" />
+    <Resource Include="Images\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\home1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\House-01.png" />
+    <Resource Include="Images\House-02.png" />
+    <Resource Include="Images\Reload-01.png" />
+    <Resource Include="Images\Reload-02.png" />
+    <Resource Include="Images\telephone.png" />
+    <Resource Include="Images\Tooltip-01.png" />
+    <Resource Include="Images\Tooltip-02.png" />
+    <Resource Include="Images\tuiche.png" />
+    <Resource Include="Images\Warning-01.png" />
+    <Resource Include="Images\Warning-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\service-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\close.png" />
+    <Resource Include="ZLF\lungcare.png" />
+    <Resource Include="ZLF\search.png" />
+    <Resource Include="ZLF\登陆界面.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Windows\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\忘记密码.jpg" />
+    <Resource Include="ZLF\用户注册.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ISupportPlatformDAO\" />
+    <Folder Include="ISupportPlatformService\" />
+    <Folder Include="UI\UserControls\Admin\" />
+    <Folder Include="UI\UserControls\Clinical\" />
+    <Folder Include="UI\UserControls\Research\" />
+    <Folder Include="UI\Windows\Clinical\" />
+    <Folder Include="UI\Windows\Research\" />
+    <Folder Include="ZLF\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lungcare.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lungcare_bg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\account_3.png" />
+    <Resource Include="Images\account_6.png" />
+    <Resource Include="Images\black-border.png" />
+    <Resource Include="Images\caia412-13890.png" />
+    <Resource Include="Images\call.png" />
+    <Resource Include="Images\close.png" />
+    <Resource Include="Images\close_1.png" />
+    <Resource Include="Images\close_5.png" />
+    <Resource Include="Images\close_7.png" />
+    <Resource Include="Images\comments.png" />
+    <Resource Include="Images\comments_5.png" />
+    <Resource Include="Images\darck-screen.png" />
+    <Resource Include="Images\data.png" />
+    <Resource Include="Images\data_1.png" />
+    <Resource Include="Images\dial.png" />
+    <Resource Include="Images\exit.png" />
+    <Resource Include="Images\feedback.png" />
+    <Resource Include="Images\fill.png" />
+    <Resource Include="Images\full-screen.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\home_4.png" />
+    <Resource Include="Images\loading按钮.png" />
+    <Resource Include="Images\location.png" />
+    <Resource Include="Images\message.png" />
+    <Resource Include="Images\message_4.png" />
+    <Resource Include="Images\message_7.png" />
+    <Resource Include="Images\play.png" />
+    <Resource Include="Images\read-mode.png" />
+    <Resource Include="Images\refresh.png" />
+    <Resource Include="Images\refresh_2.png" />
+    <Resource Include="Images\remind.png" />
+    <Resource Include="Images\remind_1.png" />
+    <Resource Include="Images\remind_3.png" />
+    <Resource Include="Images\remind_6.png" />
+    <Resource Include="Images\reply.png" />
+    <Resource Include="Images\runner.png" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="Images\sound-control.png" />
+    <Resource Include="Images\update.png" />
+    <Resource Include="Images\wavebreak516904.png" />
+    <Resource Include="Images\write.png" />
+    <Resource Include="Images\write_8.png" />
+    <Resource Include="Images\上一页.png" />
+    <Resource Include="Images\下一页.png" />
+    <Resource Include="Images\保存-副本.png" />
+    <Resource Include="Images\全选.png" />
+    <Resource Include="Images\删除.png" />
+    <Resource Include="Images\图层-4.png" />
+    <Resource Include="Images\圆角矩形-12.png" />
+    <Resource Include="Images\圆角矩形-5.png" />
+    <Resource Include="Images\圆角矩形-5_8.png" />
+    <Resource Include="Images\圆角矩形-5_9.png" />
+    <Resource Include="Images\更换照片.png" />
+    <Resource Include="Images\登录.png" />
+    <Resource Include="Images\矢量智能对象-副本.png" />
+    <Resource Include="Images\矢量智能对象.png" />
+    <Resource Include="Images\矩形-7.png" />
+    <Resource Include="Images\矩形-8-副本.png" />
+    <Resource Include="Images\矩形-8.png" />
+    <Resource Include="Images\获取验证码.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\caia412-13890.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\矩形-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\矢量智能对象-副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\data_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\矩形-8-副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Swap-Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Circle Close - 01.png" />
+    <Resource Include="Images\Full-Screen-Collapse.png" />
+    <Resource Include="Images\Full-Screen-Expand.png" />
+    <Resource Include="Images\Mouse-Drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\矩形-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\caia412-13890-v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ZLF\Controls\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\File add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\File_add.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\User-Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\上传图标.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mainBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\UserControls\Examination\CTViewControlSingle.resx">
+      <DependentUpon>CTViewControlSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Windows\Common\AboutWindow.resx" />
+    <EmbeddedResource Include="UI\UserControls\Common\CTViewControl3.resx" />
+    <EmbeddedResource Include="Layout\SideBySideByUpDownSubViewLayout.resx" />
+    <EmbeddedResource Include="Layout\SideBySideLayout.resx" />
+    <EmbeddedResource Include="Layout\ThreePartView.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdPartUIControls\ButtonEx\ButtonEx.resx" />
+    <EmbeddedResource Include="UI\UserControls\Examination\CTViewControlMA.resx" />
+    <EmbeddedResource Include="UI\Windows\Examination\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZLF\PatientMgrForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\43.png" />
+    <Resource Include="Resources\52design.com_jingying_1172.png" />
+    <Resource Include="Resources\7205-气管%281%29.png" />
+    <Resource Include="Resources\7205-气管%282%29.png" />
+    <Resource Include="Resources\7205-气管.png" />
+    <Resource Include="Resources\aaback.png" />
+    <Resource Include="Resources\back.png" />
+    <Resource Include="Resources\Camera_3.png" />
+    <Resource Include="Resources\cap_00000241.jpg" />
+    <Resource Include="Resources\cap_00000455.jpg" />
+    <Resource Include="Resources\cap_00000697.jpg" />
+    <Resource Include="Resources\cap_00000786.jpg" />
+    <Resource Include="Resources\direction_down.png" />
+    <Resource Include="Resources\direction_left.png" />
+    <Resource Include="Resources\direction_right.png" />
+    <Resource Include="Resources\direction_up.png" />
+    <Resource Include="Resources\dsiabled.png" />
+    <Resource Include="Resources\edit256.png" />
+    <Resource Include="Resources\Fake.png" />
+    <Resource Include="Resources\GradientBackground2.png" />
+    <Resource Include="Resources\GradientBackground牛仔蓝.png" />
+    <Resource Include="Resources\hand.png" />
+    <Resource Include="Resources\help.png" />
+    <Resource Include="Resources\ico_ooopic_com.png" />
+    <Resource Include="Resources\lungcare.ico" />
+    <Resource Include="Resources\lungcare_background.png" />
+    <Resource Include="Resources\lungcare_bg.ico" />
+    <Resource Include="Resources\lungcare_brand.png" />
+    <Resource Include="Resources\lungcare_logo_text.png" />
+    <Resource Include="Resources\lungcare_white.png" />
+    <Resource Include="Resources\Minus.png" />
+    <Resource Include="Resources\move - white.png" />
+    <Resource Include="Resources\move.png" />
+    <Resource Include="Resources\Next_1.png" />
+    <Resource Include="Resources\Next_2.png" />
+    <Resource Include="Resources\open.png" />
+    <Resource Include="Resources\png-00051.png" />
+    <Resource Include="Resources\png-0017.png" />
+    <Resource Include="Resources\png-00171.png" />
+    <Resource Include="Resources\png-0034.png" />
+    <Resource Include="Resources\png-0587.png" />
+    <Resource Include="Resources\png-0651.png" />
+    <Resource Include="Resources\qiu.jpg" />
+    <Resource Include="Resources\Quit.png" />
+    <Resource Include="Resources\reload.png" />
+    <Resource Include="Resources\rotateleft.png" />
+    <Resource Include="Resources\rotateleft1.png" />
+    <Resource Include="Resources\rotateright.png" />
+    <Resource Include="Resources\ruler.png" />
+    <Resource Include="Resources\save.png" />
+    <Resource Include="Resources\trackBack.jpg" />
+    <Resource Include="Resources\VirtualEndoscopyIcon.png" />
+    <Resource Include="Resources\VR.png" />
+    <Resource Include="Resources\VR1.png" />
+    <Resource Include="Resources\ZoomIn.png" />
+    <Resource Include="Resources\ZoomOut.png" />
+    <Resource Include="Resources\上.png" />
+    <Resource Include="Resources\下.png" />
+    <Resource Include="Resources\保存.png" />
+    <Resource Include="Resources\保存数据.png" />
+    <Resource Include="Resources\修改肿瘤半径.png" />
+    <Resource Include="Resources\加号.png" />
+    <Resource Include="Resources\右.png" />
+    <Resource Include="Resources\右箭头%281%29.png" />
+    <Resource Include="Resources\图片1.png" />
+    <Resource Include="Resources\图片11.png" />
+    <Resource Include="Resources\图片2.png" />
+    <Resource Include="Resources\图片21.png" />
+    <Resource Include="Resources\图片3.png" />
+    <Resource Include="Resources\垃圾桶.png" />
+    <Resource Include="Resources\大头针.png" />
+    <Resource Include="Resources\太极.png" />
+    <Resource Include="Resources\太极1.png" />
+    <Resource Include="Resources\太极2.png" />
+    <Resource Include="Resources\头.png" />
+    <Resource Include="Resources\对勾.png" />
+    <Resource Include="Resources\左.png" />
+    <Resource Include="Resources\左箭头%281%29.png" />
+    <Resource Include="Resources\已完成.png" />
+    <Resource Include="Resources\开始.png" />
+    <Resource Include="Resources\指南针.png" />
+    <Resource Include="Resources\指南针1.png" />
+    <Resource Include="Resources\擦除.png" />
+    <Resource Include="Resources\擦除2.png" />
+    <Resource Include="Resources\支气管加点.png" />
+    <Resource Include="Resources\支气管擦除.png" />
+    <Resource Include="Resources\改变肿瘤颜色.png" />
+    <Resource Include="Resources\放大2倍.png" />
+    <Resource Include="Resources\放大3倍.png" />
+    <Resource Include="Resources\放大4倍.png" />
+    <Resource Include="Resources\放大一倍.png" />
+    <Resource Include="Resources\无视频源.png" />
+    <Resource Include="Resources\显示全肺.png" />
+    <Resource Include="Resources\显示全肺2.png" />
+    <Resource Include="Resources\最大化.png" />
+    <Resource Include="Resources\最小化.png" />
+    <Resource Include="Resources\未完成.png" />
+    <Resource Include="Resources\气管半透明.png" />
+    <Resource Include="Resources\病灶.png" />
+    <Resource Include="Resources\病灶加点.png" />
+    <Resource Include="Resources\病灶擦除.png" />
+    <Resource Include="Resources\确认肿瘤位置.png" />
+    <Resource Include="Resources\窗宽窗位.png" />
+    <Resource Include="Resources\肺.png" />
+    <Resource Include="Resources\肺1.png" />
+    <Resource Include="Resources\足.png" />
+    <Resource Include="Resources\进度条.png" />
+    <Resource Include="Resources\退出.png" />
+    <Resource Include="Resources\高亮开关.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CTRefineApp.csproj" />
+    <Resource Include="Images\TimeWait.png" />
+    <None Include="Resources\minimun.png" />
+    <None Include="Resources\Camera-05%283%29.png" />
+    <None Include="Resources\Camera-05%282%29.png" />
+    <None Include="Resources\close0.png" />
+    <None Include="Resources\Camera-05%281%29.png" />
+    <Resource Include="Images\朗开虚拟导航.png" />
+    <None Include="Resources\朗开虚拟导航.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\下载%281%29.png" />
+    <None Include="Resources\下载.png" />
+    <None Include="Resources\Folder%28rar%29.png" />
+    <None Include="Resources\Folder%28CT%29.png" />
+    <Resource Include="Images\lesion.png" />
+    <None Include="Resources\lesion.png" />
+    <None Include="Resources\48.png" />
+    <None Include="Resources\ppt.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\ruler1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

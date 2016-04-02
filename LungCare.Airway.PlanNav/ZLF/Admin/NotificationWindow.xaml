@@ -1,0 +1,158 @@
+﻿<Window 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:LungCare_Airway_PlanNav"
+    xmlns:UserControls="clr-namespace:LungCare.SupportPlatform.UI.UserControls" 
+	xmlns:ThemedControlsLibrary="clr-namespace:ThemedControlsLibrary;assembly=ThemedControlsLibrary" xmlns:Controls="clr-namespace:LungCare_Airway_PlanNav.ZLF.Controls" mc:Ignorable="d"
+	x:Class="LungCare_Airway_PlanNav.NotificationWindow"
+	x:Name="NotificationWindow1" ResizeMode="NoResize"
+	Width="960" MinWidth="960" Height="540" MinHeight="540" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="False" SizeChanged="NotificationWindow_SizeChanged" Title="朗开医疗肺e助手">
+    <Window.Resources>
+
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ButtonNormalBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Viewbox Margin="0">
+                            <Border x:Name="border" BorderBrush="White" BorderThickness="1" Height="100" Width="100" CornerRadius="5" Background="#7F3E7FFF">
+                                <Grid x:Name="grid">
+
+                                    <Path x:Name="path" Data="F1M1355.27,1727.8L1346.08,1727.8C1346.06,1726.48 1346.05,1725.67 1346.05,1725.38 1346.05,1722.41 1346.54,1719.96 1347.52,1718.04 1348.51,1716.12 1350.47,1713.96 1353.43,1711.56 1356.38,1709.16 1358.14,1707.58 1358.72,1706.84 1359.61,1705.66 1360.05,1704.37 1360.05,1702.95 1360.05,1700.98 1359.27,1699.29 1357.7,1697.89 1356.12,1696.49 1354,1695.78 1351.34,1695.78 1348.77,1695.78 1346.62,1696.52 1344.89,1697.98 1343.16,1699.44 1341.98,1701.68 1341.33,1704.68L1332.04,1703.53C1332.3,1699.23 1334.13,1695.58 1337.53,1692.58 1340.93,1689.58 1345.38,1688.08 1350.91,1688.08 1356.72,1688.08 1361.34,1689.6 1364.77,1692.63 1368.21,1695.67 1369.92,1699.2 1369.92,1703.24 1369.92,1705.47 1369.29,1707.58 1368.03,1709.58 1366.77,1711.57 1364.08,1714.28 1359.95,1717.71 1357.81,1719.49 1356.48,1720.92 1355.97,1722 1355.45,1723.08 1355.22,1725.01 1355.27,1727.8z M1346.08,1741.41L1346.08,1731.29 1356.2,1731.29 1356.2,1741.41 1346.08,1741.41z" Stretch="Uniform" Fill="#FFFFFFFF" Width="Auto" Height="Auto" Margin="15" RenderTransformOrigin="0.5,0.5">
+                                        <Path.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup>
+                                        </Path.RenderTransform>
+                                    </Path>
+                                </Grid>
+                            </Border>
+                        </Viewbox>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#FF3E7FFF"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#CC003FBC"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true"/>
+                            <Trigger Property="ToggleButton.IsChecked" Value="true"/>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                                <Setter Property="Background" TargetName="border" Value="#FF7A7A7A"/>
+                                <Setter Property="Fill" TargetName="path" Value="#FFC8C8C8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Storyboard x:Key="OnMouseLeftButtonDown1"/>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown"/>
+    </Window.Triggers>
+    <Border x:Name="headBorder" BorderBrush="Black" BorderThickness="1" Background="#FFF7F6F6">
+        <Grid x:Name="gd" Margin="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="0.717*"/>
+                <RowDefinition Height="0"/>
+            </Grid.RowDefinitions>
+            <Border  BorderBrush="#FF5A5A5A" BorderThickness="1">
+                <Grid Margin="0" Background="#FF592759" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="680"/>
+                        <ColumnDefinition Width="0.502*" />
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="image" Margin="29.541,4.661,500.459,3" Source="/LungCare.Airway.PlanNav;component/Images/矢量智能对象.png" Stretch="UniformToFill" Visibility="Visible" Width="150" />
+                    <Image x:Name="personHeadImageHead" Margin="209.5,17,443.5,4" Source="/LungCare.Airway.PlanNav;component/Images/User-Add.png" Visibility="Visible" Width="27" Height="27" />
+                    <Button x:Name="btnExit" Click="btnExit_Click" Content="Button" Grid.Column="2" HorizontalAlignment="Right" Height="46" Margin="0,0.666,10,0" VerticalAlignment="Top" Width="72" Style="{DynamicResource ButtonStyle3}" Cursor="Hand"/>
+                    <TextBlock x:Name="userNameHead" HorizontalAlignment="Left" Margin="242,21,0,0" TextWrapping="Wrap" Text="朗开医疗肺e助手后台管理" VerticalAlignment="Top" Height="24" Width="485" Foreground="#FFF5F1F1" FontSize="16" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="370,26,0,0" TextWrapping="Wrap" Text="，欢迎登陆朗开医疗！" VerticalAlignment="Top" Height="15" Width="115" FontSize="10.667" Foreground="#FFF0EAEA" Visibility="Hidden"/>
+                    <Button x:Name="btnADMIN" Grid.ColumnSpan="2" Content="ADMIN" HorizontalAlignment="Left" Margin="652,9,0,0" VerticalAlignment="Top" Width="75" Click="btnADMIN_Click" Visibility="Hidden"/>
+
+                </Grid>
+            </Border>
+            <Grid Margin="0" Grid.Row="1">
+                <Grid HorizontalAlignment="Left" Height="339" Margin="180.541,70,0,0" VerticalAlignment="Top" Width="588.459">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="186*"/>
+                        <RowDefinition Height="173*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="313*"/>
+                        <ColumnDefinition Width="325*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Border Margin="5" CornerRadius="15"  BorderThickness="0" BorderBrush="White" Opacity="0.8">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="0" Color="#FF57A7DA" BlurRadius="1"/>
+                            </Border.Effect>
+                            <Border x:Name="borderNewOrder" Background="#FF57A7DA" HorizontalAlignment="Center" Opacity="0.9" CornerRadius="15"  Width="263" />
+                        </Border>
+                        <Label x:Name="lbNewOrder" Content="新订单" Foreground="White" HorizontalAlignment="Left" Height="53" Margin="92.459,60,0,0" VerticalAlignment="Top" Width="100" FontSize="29.333"/>
+                        <Ellipse Fill="#FF9E2626" HorizontalAlignment="Left" Height="44" Margin="192.459,30,0,0" VerticalAlignment="Top" Width="42"/>
+                        <Label x:Name="lbNewOrder1" HorizontalAlignment="Left" Content="11" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="41" Margin="189.459,31,0,0"  VerticalAlignment="Top" Width="51" FontSize="21.333"/>
+
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Border Margin="5" CornerRadius="15"  BorderThickness="0" BorderBrush="White" Opacity="0.8">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="0" Color="#FF57A7DA" BlurRadius="1"/>
+                            </Border.Effect>
+                            <Border x:Name="borderNewCetifi" Background="#FF57A7DA" HorizontalAlignment="Center" Opacity="0.9" CornerRadius="15"  Width="263" />
+                        </Border>
+                        <Label x:Name="lbNewCertifi" Content="待审核" Foreground="White" HorizontalAlignment="Left" Height="53" Margin="84,59,0,0" VerticalAlignment="Top" Width="109" FontSize="29.333"/>
+                        <Ellipse Fill="#FF9E2626" HorizontalAlignment="Left" Height="44" Margin="203.459,30,0,0" VerticalAlignment="Top" Width="42"/>
+                        <Label x:Name="lbNewCertifi1" HorizontalAlignment="Left" Content="11" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="41" Margin="198.459,31,0,0"  VerticalAlignment="Top" Width="51" FontSize="21.333"/>
+
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Border Margin="5" CornerRadius="15"  BorderThickness="0" BorderBrush="White" Opacity="0.8">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="0" Color="#FF57A7DA" BlurRadius="1"/>
+                            </Border.Effect>
+                            <Border x:Name="borderUserList" Background="#FF57A7DA" HorizontalAlignment="Center" Opacity="0.9" CornerRadius="15"  Width="263" />
+                        </Border>
+
+                        <Label x:Name="lbUserList" Content="用户列表" Foreground="White" HorizontalAlignment="Left" Height="53" Margin="78,60,0,0" VerticalAlignment="Top" Width="137" FontSize="29.333"/>
+                        <Ellipse Fill="#FF9E2626" HorizontalAlignment="Left" Height="44" Margin="203.459,30,0,0" VerticalAlignment="Top" Width="42"/>
+                        <Label x:Name="lbUserList1" HorizontalAlignment="Left" Content="11" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="41" Margin="198.459,31,0,0"  VerticalAlignment="Top" Width="51" FontSize="21.333"/>
+
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Border Margin="5" CornerRadius="15"  BorderThickness="0" BorderBrush="White" Opacity="0.8">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="0" Color="#FF57A7DA" BlurRadius="1"/>
+                            </Border.Effect>
+                            <Border x:Name="borderMessageConfiguration" Background="#FF57A7DA" HorizontalAlignment="Center" Opacity="0.9" CornerRadius="15"  Width="263" />
+                        </Border>
+                        <!--<Label x:Name="lbUserList" Content="用户列表" Foreground="White" HorizontalAlignment="Left" Height="53" Margin="69.459,60,0,0" VerticalAlignment="Top" Width="137" FontSize="29.333"/>
+                        <Ellipse Fill="#FF9E2626" HorizontalAlignment="Left" Height="44" Margin="203.459,30,0,0" VerticalAlignment="Top" Width="42"/>
+                        <Label x:Name="lbUserList1" HorizontalAlignment="Left" Content="11" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="41" Margin="198.459,31,0,0"  VerticalAlignment="Top" Width="51" FontSize="21.333"/>-->
+                        <Label x:Name="lbMessageConfigure" Content="消息配置" Foreground="White" HorizontalAlignment="Left" Height="53" Margin="69.459,60,0,0" VerticalAlignment="Top" Width="162" FontSize="29.333"/>
+                        <Ellipse Fill="#FF9E2626" HorizontalAlignment="Left" Height="44" Margin="203.459,30,0,0" VerticalAlignment="Top" Width="42" Visibility="Hidden"/>
+                        <Label x:Name="lbMessageConfigure1" HorizontalAlignment="Left" Content="11" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="41" Margin="198.459,31,0,0"  VerticalAlignment="Top" Width="51" FontSize="21.333" Visibility="Hidden"/>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="0" Grid.Row="2">
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

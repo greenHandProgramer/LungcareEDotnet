@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="LungCare.SupportPlatform.UI.UserControls.FileItemUserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LungCare.SupportPlatform.UI.UserControls"
+             xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" xmlns:ThemedControlsLibrary="clr-namespace:ThemedControlsLibrary;assembly=ThemedControlsLibrary"
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="100">
+    <UserControl.Resources>
+     
+    
+     
+    	<Style x:Key="TabItemStyle1" TargetType="{x:Type TabItem}">
+    		<Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+    		<Setter Property="Foreground" Value="Black"/>
+    		<Setter Property="Padding" Value="6,1,6,1"/>
+    		<Setter Property="BorderBrush" Value="{StaticResource TabControlNormalBorderBrush}"/>
+    		<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+    		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+    		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+    		<Setter Property="Template">
+    			<Setter.Value>
+    				<ControlTemplate TargetType="{x:Type TabItem}">
+    					<Grid HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="100">
+    						
+    						<Border Margin="0" CornerRadius="15"  BorderThickness="0" BorderBrush="White" Opacity="0.8">
+    							
+								<Border.Effect>
+									<DropShadowEffect ShadowDepth="0" Color="#FF57A7DA" BlurRadius="1"/>
+								</Border.Effect>
+								<Grid>
+                               <Border x:Name="borderFileItem" Background="#FF57A7DA" HorizontalAlignment="Center" Opacity="0" CornerRadius="15" Width="100" >
+							     
+							   </Border>
+							    <Image Source="/LungCare.Airway.PlanNav;component/Images/zip.png" Margin="23,9,28,61"></Image>
+								<Label x:Name="lbFileName" Content="新证书审核.zip" Foreground="Black" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="8,62,0,0" VerticalAlignment="Top" Width="85" FontSize="10"/>
+								</Grid>
+                            </Border>
+    					</Grid>
+    					<ControlTemplate.Triggers>
+    						<Trigger Property="IsMouseOver" Value="true">
+    							<Setter Property="Opacity" TargetName="borderFileItem" Value="0.2"/>
+    						</Trigger>
+    						<Trigger Property="IsSelected" Value="true">
+    							<Setter Property="Panel.ZIndex" Value="1"/>
+    							<Setter Property="Opacity" TargetName="borderFileItem" Value="0.7"/>
+    						</Trigger>
+    						<MultiTrigger>
+    							<MultiTrigger.Conditions>
+    								<Condition Property="IsSelected" Value="false"/>
+    								<Condition Property="IsMouseOver" Value="true"/>
+    							</MultiTrigger.Conditions>
+    							<Setter Property="Opacity" TargetName="borderFileItem" Value="0.2"/>
+    						</MultiTrigger>
+    						<Trigger Property="TabStripPlacement" Value="Bottom"/>
+    						<Trigger Property="TabStripPlacement" Value="Left"/>
+    						<Trigger Property="TabStripPlacement" Value="Right"/>
+    						<MultiTrigger>
+    							<MultiTrigger.Conditions>
+    								<Condition Property="IsSelected" Value="true"/>
+    								<Condition Property="TabStripPlacement" Value="Top"/>
+    							</MultiTrigger.Conditions>
+    							<Setter Property="Margin" Value="-2,-2,-2,-1"/>
+    						</MultiTrigger>
+    						<MultiTrigger>
+    							<MultiTrigger.Conditions>
+    								<Condition Property="IsSelected" Value="true"/>
+    								<Condition Property="TabStripPlacement" Value="Bottom"/>
+    							</MultiTrigger.Conditions>
+    							<Setter Property="Margin" Value="-2,-1,-2,-2"/>
+    						</MultiTrigger>
+    						<MultiTrigger>
+    							<MultiTrigger.Conditions>
+    								<Condition Property="IsSelected" Value="true"/>
+    								<Condition Property="TabStripPlacement" Value="Left"/>
+    							</MultiTrigger.Conditions>
+    							<Setter Property="Margin" Value="-2,-2,-1,-2"/>
+    						</MultiTrigger>
+    						<MultiTrigger>
+    							<MultiTrigger.Conditions>
+    								<Condition Property="IsSelected" Value="true"/>
+    								<Condition Property="TabStripPlacement" Value="Right"/>
+    							</MultiTrigger.Conditions>
+    							<Setter Property="Margin" Value="-1,-2,-2,-2"/>
+    						</MultiTrigger>
+    						<Trigger Property="IsEnabled" Value="false">
+    							<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+    						</Trigger>
+    					</ControlTemplate.Triggers>
+    				</ControlTemplate>
+    			</Setter.Value>
+    		</Setter>
+    	</Style>
+     
+    
+     
+    </UserControl.Resources>
+	<Grid HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="100">
+		<TabItem  Background="Transparent" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="100" Margin="0" Style="{DynamicResource TabItemStyle1}"/>
+		
+                       
+		
+    </Grid>
+</UserControl>

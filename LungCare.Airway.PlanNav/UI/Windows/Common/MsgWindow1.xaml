@@ -1,0 +1,24 @@
+﻿<Window x:Class="LungCare.SupportPlatform.UI.Windows.Common.MsgWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LungCare.SupportPlatform.UI.Windows.Common"
+        
+        mc:Ignorable="d"
+        Title="MsgWindow" Height="499.5" Width="841.333" WindowStyle="None" ResizeMode="NoResize" Background="{x:Null}" Foreground="{x:Null}" WindowStartupLocation="CenterOwner" Opacity="0.9" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Grid Background="Transparent">
+        <Border x:Name="borderMessage" MouseDown="borderMessage_MouseDown" CornerRadius="10" Margin="0" BorderThickness="0" BorderBrush="White">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#eee"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Background="#FFEBEBEB" Opacity="0.89">
+                <TextBlock x:Name="lbTitle" Text="" TextWrapping="Wrap" TextAlignment="Center" Margin="10,97,10,322"  FontSize="32" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" FontWeight="Bold" Foreground="#FF59275A"/>
+                <TextBlock x:Name="lbContent" TextWrapping="Wrap" Text="内容消息内容消息内容消息内容消息内容消息内容消息内容" Margin="38,154,48,10" Foreground="Black"  FontSize="32" />
+                <Image x:Name="btnClose" HorizontalAlignment="Left" Height="47" Margin="780,5,0,0" VerticalAlignment="Top" Width="47" Source="/LungCare.Airway.PlanNav;component/Images/close_1.png" MouseDown="btnClose_MouseDown" Cursor="Hand"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,52 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="LungCare_Airway_PlanNav.App"
+    StartupUri="UI\Windows\Examination\LoginWnd.xaml">
+    <!--StartupUri="UI\Windows\Common\MainDataWindow.xaml">-->
+    
+    <!--StartupUri="UI\Windows\Common\MainDataWindow.xaml">-->
+   
+    <!--Views\Examination\Ma\AllLesionWindow.xaml-->
+	<Application.Resources>
+		<!-- 应该在此定义应用程序级的资源。-->
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="Dictionary/AllStyle.xaml"/>
+                
+                <ResourceDictionary Source="Dictionary/CheckBoxDic.xaml"/>
+                <ResourceDictionary Source="Style/btntest.xaml"/>
+                <ResourceDictionary Source="Style/btn.xaml"/>
+
+                <ResourceDictionary Source="Style/btn2.xaml"/>
+                <ResourceDictionary Source="Style/uploadlistDic.xaml"/>
+                <ResourceDictionary Source="Style/uploadList.xaml"/>
+                <ResourceDictionary Source="Style/uploadDic.xaml"/>
+                <ResourceDictionary Source="Style/datagridColumnheader.xaml"/>
+                <ResourceDictionary Source="Style/uploadProgressDic.xaml"/>
+                <ResourceDictionary Source="Style/StartStopDic.xaml"/>
+                <ResourceDictionary Source="Style/StartStopDic1.xaml"/>
+                <ResourceDictionary Source="Style/RegistSelectFileDic.xaml"/>
+                <ResourceDictionary Source="Style/RegisterDic.xaml"/>
+                <ResourceDictionary Source="Style/RegistCancel.xaml"/>
+                <ResourceDictionary Source="Style/signAndLoginBtn.xaml"/>
+                <ResourceDictionary Source="Style/textBoxValidate.xaml"/>
+                <ResourceDictionary Source="Style/personSubTabItem1Dic.xaml"/>
+                <ResourceDictionary Source="Style/changeImageButtonStyleDic.xaml"/>
+                <ResourceDictionary Source="Style/personSubButton.xaml"/>
+
+                <ResourceDictionary Source="Style/service-about.xaml"/>
+                <ResourceDictionary Source="Style/service-gengxin.xaml"/>
+                <ResourceDictionary Source="Style/service-tab.xaml"/>
+                <ResourceDictionary Source="Style/service-yijian.xaml"/>
+                <ResourceDictionary Source="Style/checkbox.xaml"/>
+                <ResourceDictionary Source="Style/btn-video-back.xaml"/>
+                <ResourceDictionary Source="Style/btn-video-exit.xaml"/>
+                <ResourceDictionary Source="Style/btn-video-start.xaml"/>
+                <ResourceDictionary Source="Style/btn-video-stretch.xaml"/>
+                <ResourceDictionary Source="Style/ToggleButton.xaml"/>
+                <ResourceDictionary Source="Style/tabitem-navigate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

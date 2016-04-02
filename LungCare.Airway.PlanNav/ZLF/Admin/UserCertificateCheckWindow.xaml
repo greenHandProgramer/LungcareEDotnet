@@ -1,0 +1,230 @@
+﻿<Window 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:LungCare_Airway_PlanNav"
+    xmlns:UserControls="clr-namespace:LungCare.SupportPlatform.UI.UserControls" 
+	xmlns:ThemedControlsLibrary="clr-namespace:ThemedControlsLibrary;assembly=ThemedControlsLibrary" xmlns:Controls="clr-namespace:LungCare_Airway_PlanNav.ZLF.Controls" mc:Ignorable="d"
+	x:Class="LungCare_Airway_PlanNav.UserCertificateCheckWindow"
+	x:Name="NotificationWindow1" ResizeMode="NoResize"
+	Width="960" MinWidth="960" Height="540" MinHeight="540" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="False"  Title="朗开医疗肺e助手">
+    <Window.Resources>
+        <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
+        <Style TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="IsHitTestVisible" Value="False" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+        <Style x:Key="{x:Type ListViewItem}" TargetType="ListViewItem">
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border Name="Border" Padding="2" SnapsToDevicePixels="true" Background="Transparent">
+                            <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ListBoxItemStyle1" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+            <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+            <Setter Property="Padding" Value="2,0,0,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <Border x:Name="Bd" CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true" Height="104" Width="122.5">
+                            <Grid>
+                                <Image Source="/LungCare.Airway.PlanNav;component/Images/zip.png" Margin="25,5,34.5,59.337"></Image>
+                                <RichTextBox HorizontalAlignment="Left" HorizontalContentAlignment="Center" Background="Transparent" BorderThickness="0" IsReadOnly="True" Height="34.5" Margin="5,51.5,0,0" VerticalAlignment="Top" Width="105.5">
+                                    <FlowDocument>
+                                        <Paragraph>
+                                            <Run Text="{TemplateBinding Content}"/>
+                                        </Paragraph>
+                                    </FlowDocument>
+                                </RichTextBox>
+
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter Property="Background" TargetName="Bd" Value="#FF57A7DA"/>
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsSelected" Value="true"/>
+                                    <Condition Property="Selector.IsSelectionActive" Value="false"/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                            </MultiTrigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown"/>
+    </Window.Triggers>
+    <Border x:Name="headBorder" BorderBrush="Black" BorderThickness="1" Background="#FFF7F6F6">
+        <Grid x:Name="gd" Margin="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="0.717*"/>
+                <RowDefinition Height="0"/>
+            </Grid.RowDefinitions>
+            <Border  BorderBrush="#FF5A5A5A" BorderThickness="1">
+                <Grid Margin="0" Background="#FF592759" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="680"/>
+                        <ColumnDefinition Width="0.502*" />
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="image" Margin="29.541,4.661,500.459,3" Source="/LungCare.Airway.PlanNav;component/Images/矢量智能对象.png" Stretch="UniformToFill" Visibility="Visible" Width="150" />
+                    <TextBlock HorizontalAlignment="Left" Margin="370,26,0,0" TextWrapping="Wrap" Text="，欢迎登陆朗开医疗！" VerticalAlignment="Top" Height="15" Width="115" FontSize="10.667" Foreground="#FFF0EAEA" Visibility="Hidden"/>
+                    <Image x:Name="btnClose" MouseDown="btnClose_MouseDown" HorizontalAlignment="Left" Height="35" Margin="232,6,0,0" VerticalAlignment="Top" Width="35" Source="/LungCare.Airway.PlanNav;component/Images/close.png" Cursor="Hand" Grid.Column="1"/>
+
+                </Grid>
+            </Border>
+            <Grid Margin="0" Grid.Row="1">
+                <Grid HorizontalAlignment="Left" Height="468" Margin="52,10,0,0" VerticalAlignment="Top" Width="830">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32*"/>
+                        <RowDefinition Height="94*"/>
+                        <RowDefinition Height="17*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <ListView x:Name="listViewUser" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Height="86" Margin="7,0,-14,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontSize="15" BorderThickness="0" HorizontalAlignment="Left" Width="837">
+                            <ListView.View>
+                                <GridView>
+
+                                    <GridViewColumn Width="210" Header="手机号码">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False" Content="手机号码" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="200" IsHitTestVisible="False" />
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False"  Content="{Binding PhoneNumber}" HorizontalAlignment="Center" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="200" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Width="150" Header="医生姓名">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False"  Content="医生姓名" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="140" IsHitTestVisible="False"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False"  Content="{Binding ChineseName}" ToolTip="{Binding PatientName}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="140" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Width="100" Header="科室">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False"  Content="科室" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="90" IsHitTestVisible="False"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label  Focusable="False" Content="{Binding Department}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="90" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Width="120" Header="医院">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False"  Content="医院" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="110" IsHitTestVisible="False"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Focusable="False"  Content="{Binding Institution}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="110" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <!--<GridViewColumn Width="100" Header="数据日期">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label  Focusable="False" Content="数据日期" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="90" IsHitTestVisible="False" />
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Focusable="False"  Content="{Binding AcquisitionDate}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="90" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>-->
+                                    <GridViewColumn Width="200" Header="注册时间">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <Label  Focusable="False" Content="注册时间" Background="#FF57A7DA" HorizontalContentAlignment="Center" Width="200" IsHitTestVisible="False"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label  Focusable="False" Content="{Binding RegistrationTimeStamp}" Background="#FFE2E2E2" HorizontalContentAlignment="Center" Width="200" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+
+                                </GridView>
+                            </ListView.View>
+                            <!--<local:上传列表Entity 年龄="67" 状态="已提交" 单号="15092001" 性别="女" 患者姓名="汪欣琳" 时间="2015/09/20"/>
+            <local:上传列表Entity 年龄="58" 状态="已提交" 单号="15092002" 性别="男" 患者姓名="张阳" 时间="2015/09/21"/>-->
+                        </ListView>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid>
+                            <Button x:Name="btnDownloadUserFile" Click="btnDownloadUserFile_Click"  Content="下载" HorizontalAlignment="Left" Height="39" Margin="340,259,0,0" VerticalAlignment="Top" Width="98" Style="{DynamicResource normalButtonStyle}"/>
+                            <Button x:Name="btnUploadUserFile" Click="btnUploadUserFile_Click"  Content="上传" HorizontalAlignment="Left" Height="39" Margin="205,259,0,0" VerticalAlignment="Top" Width="98" Style="{DynamicResource normalButtonStyle}"/>
+                            <Label Content="当前状态：" HorizontalAlignment="Center" Margin="596,4,132,265" Width="102" FontSize="20"/>
+                        </Grid>
+                        <Grid Margin="0,-43,0,0">
+                            <Image x:Name="imageCertificate" Source="/LungCare.Airway.PlanNav;component/Images/File add.png"  HorizontalAlignment="Left" Height="284" Margin="123,8,0,0" VerticalAlignment="Top" Width="360" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleX="0.343"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform X="0.74"/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <Label x:Name="lbCertificateStatus" HorizontalContentAlignment="Center" Content="等待工作人员审核" HorizontalAlignment="Center" Margin="505,108,23,121" Width="302" FontSize="36"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Button x:Name="btnComfirm"   Content="确认" Click="btnComfirm_Click" HorizontalAlignment="Left" Height="39" Margin="605,6,0,0" VerticalAlignment="Top" Width="99" Style="{DynamicResource normalButtonStyle}"/>
+                        <Button x:Name="btnCancelFile"   Content="返回" Click="btnCancelFile_Click" HorizontalAlignment="Left" Height="39" Margin="721,6,0,0" VerticalAlignment="Top" Width="99" Style="{DynamicResource normalButtonStyle}"/>
+                        <RadioButton x:Name="rbCheckSuccess" Checked="rbCheckSuccess_Checked" Content="审核通过" IsChecked="True" GroupName="status" HorizontalAlignment="Left" Margin="79,15,0,0" VerticalAlignment="Top" Height="35" Width="96" FontSize="20"/>
+                        <RadioButton x:Name="rbCheckFailed" Checked="rbCheckFailed_Checked" Content="证书审核不通过" GroupName="status" HorizontalAlignment="Left" Margin="194,14,0,0" VerticalAlignment="Top" Height="35" Width="158" FontSize="20"/>
+                        <TextBox x:Name="tbCheckReason" HorizontalAlignment="Left" Background="LightGray" Height="37" Margin="357,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="18"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="0" Grid.Row="2">
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
