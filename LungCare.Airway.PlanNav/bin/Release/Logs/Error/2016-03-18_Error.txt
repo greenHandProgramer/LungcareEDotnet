@@ -1,0 +1,970 @@
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:32  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:33  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:36  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:40  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:10:59  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:37  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:38  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:39  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:41  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:47  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:48  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594
+2016-03-18  15:16:48  System.InvalidOperationException: 对象当前正在其他地方使用。
+   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.IgnoreMetafileErrors(Image image, Int32& errorStatus)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y)
+   在 LungCare.SupportPlatform.UI.UserControls.Examination.CTViewControlSingle.pictureBox_Paint(Object sender, PaintEventArgs e) 位置 e:\LX\ma\new\LungCare.Airway.PlanNav\UI\UserControls\Examination\CTViewControlSingle.cs:行号 594

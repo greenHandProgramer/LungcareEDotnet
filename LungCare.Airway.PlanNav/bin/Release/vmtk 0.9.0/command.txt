@@ -1,0 +1,1 @@
+vmtkmarchingcubes -ifile D:\project\Matlab\morphy\ss\s\lungregion.mha -l 1 -ofile D:\project\Matlab\morphy\ss\s\lung_region.vtp
