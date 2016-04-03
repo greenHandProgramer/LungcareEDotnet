@@ -563,7 +563,14 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             pictureBox.Refresh();
         }
 
-
+        public void UnDoReactangle()
+        {
+            if (listRectangle != null && listRectangle.Count>0)
+            {
+                listRectangle.RemoveAt(listRectangle.Count - 1);
+                pictureBox.Refresh();
+            }
+        }
         public void Refresh1()
         {
             this.Focus();

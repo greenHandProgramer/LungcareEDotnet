@@ -22,6 +22,7 @@ using LungCare.SupportPlatform.SupportPlatformDAO.Utils;
 using LungCare.SupportPlatform.SupportPlatformDAO.Files;
 using LungCare.SupportPlatform.SupportPlatformDAO.Logs;
 using AirwayCT.Entity;
+using LungCare.SupportPlatform.SupportPlatformDAO.Algorithm;
 
 namespace LungCare.SupportPlatform.UI.UserControls.Examination
 {
@@ -669,6 +670,24 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
                 e.Graphics.DrawLine(pen, new Point((int)_point2D[0], 0), new Point((int)_point2D[0], _bitmapCT.Height));
             }
 
+            //if (isDrawRectangle)
+            {
+                pen = new Pen(Brushes.Red, 3 / matrix.Elements[3]);
+                pen.DashStyle = DashStyle.Solid;
+                if (currRectagle.Width != 0 && currRectagle.Height != 0)
+                {
+                    e.Graphics.DrawRectangle(pen, currRectagle.X, currRectagle.Y, currRectagle.Size.Width, currRectagle.Size.Height);
+                }
+                foreach (var item in listRectangle)
+                {
+                    if (item.Frame == (int)tbFrame.Value)
+                    {
+                        e.Graphics.DrawRectangle(pen, item.Rectagle.X, item.Rectagle.Y, item.Rectagle.Size.Width, item.Rectagle.Size.Height);
+                    }
+                }
+
+            }
+
             if (true)
             {
                 pen.DashStyle = DashStyle.Solid;
@@ -798,7 +817,11 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             e.Graphics.DrawString(upOrientationEnumText, new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(pictureBox.Width / 2, 2));
             e.Graphics.DrawString(downOrientationEnumText, new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(pictureBox.Width / 2, pictureBox.Height - 40));
             e.Graphics.DrawString(leftOrientationEnumText, new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(2, pictureBox.Height / 2));
-            e.Graphics.DrawString(((int)tbFrame.Value).ToString(), new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(2, pictureBox.Height / 2 + 30));
+            e.Graphics.DrawString(((int)tbFrame.Value).ToString(), new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(2, pictureBox.Height -40));
+            if (mouseOverIndex < _dicomAlldata.Length)
+            {
+                e.Graphics.DrawString((_dicomAlldata[mouseOverIndex]).ToString(), new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(2, pictureBox.Height - 20));
+            }
             e.Graphics.DrawString(rightOrientationEnumText, new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(pictureBox.Width - 30, pictureBox.Height / 2));
 
             if (_airwayPatient != null)
@@ -953,6 +976,24 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
         }
 
         private bool isDrawCloedCurve = false;
+        private bool isDrawRectangle = false;
+        private Rectangle currRectagle;
+
+        public void StartDrawRectangle()
+        {
+            SetAllOperationDisable();
+            isDrawRectangle = true;
+
+            this.Cursor = Cursors.Arrow;
+        }
+
+        public void StopDrawRectangle()
+        {
+            SetAllOperationDisable();
+            isDrawRectangle = false;
+
+            this.Cursor = Cursors.Arrow;
+        }
         private void btnDrawClosedCurve_Click(object sender, EventArgs e)
         {
             isDrawCloedCurve = true;
@@ -1205,6 +1246,8 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             }
 
             _previousPoints = new List<int>();
+
+            currRectagle = new Rectangle((int)startPointOnImageCoord1.X, (int)startPointOnImageCoord1.Y, 0, 0);
         }
         private int AxialToArrayIndex(int x, int y, int z, double[] dimension , int width , int height)
         {
@@ -1583,6 +1626,14 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
                 }
             }
 
+            if (isDrawRectangle && e.Button == MouseButtons.Left)
+            {
+                int minX = Math.Min((int)startPointOnImageCoord1.X, (int)startPointOnImageCoord.X);
+                int minY = Math.Min((int)startPointOnImageCoord1.Y, (int)startPointOnImageCoord.Y);
+                int maxX = Math.Max((int)startPointOnImageCoord1.X, (int)startPointOnImageCoord.X);
+                int maxY = Math.Max((int)startPointOnImageCoord1.Y, (int)startPointOnImageCoord.Y);
+                currRectagle = new Rectangle(minX, minY, maxX - minX, maxY - minY);
+            }
             //if ((System.Windows.Forms.Control.ModifierKeys & Keys.Control) == Keys.Control && e.Button == System.Windows.Forms.MouseButtons.Left)
             if ((isZoom || (System.Windows.Forms.Control.ModifierKeys & Keys.Control) == Keys.Control) && e.Button == MouseButtons.Left)
             {
@@ -1623,6 +1674,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             
             startPointOnControlCoord = new PointF(e.X, e.Y);
             startPointOnImageCoord = Control2Image(matrix, startPointOnControlCoord);
+            mouseOverIndex = GetArrayIndex((int)startPointOnImageCoord.X, (int)startPointOnImageCoord.Y, (int)(tbFrame.Value), _dimensionsCT, _bitmapAirway.Height, _bitmapAirway.Width);
             if (isMeasure)
             {
                 endPointOnImageCoord = startPointOnImageCoord;
@@ -1634,6 +1686,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             pictureBox.Refresh();
         }
 
+        private int mouseOverIndex = 0;
         private bool isZoom = false;
         private bool isPanning = false;
         private bool isMeasure = false;
@@ -1655,6 +1708,11 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
 
         public void StartMeasure()
         {
+            LesionAlgorithmDAO.ModifyLesionBytes(listRectangle , _dimensionsCT , _dimensionsCT[1]
+                , _dicomAlldata, ref _airwayData);
+            pictureBox.Refresh();
+            return;
+                
             SetAllOperationDisable();
             isMeasure = true;
             isAddPoint = false;
@@ -1695,6 +1753,14 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
 
                 pictureBox.Refresh();
             }
+            else if (isDrawRectangle)
+            {
+                if (listRectangle != null && listRectangle.Count > 0)
+                {
+                    listRectangle.RemoveAt(listRectangle.Count - 1);
+                    pictureBox.Refresh();
+                }
+            }
             else if (_previousPoints != null)
             {
                 if (isAddPoint)
@@ -1713,6 +1779,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
                 }
                 UpdateImage();
             }
+            
             
         }
         private bool isInPolylineRegion()
@@ -1785,9 +1852,28 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             return true;
         }
 
-
+        private List<RectangleEntity> listRectangle = new List<RectangleEntity>();
         private void pictureBox_MouseUp(object sender, MouseEventArgs e)
         {
+            if (currRectagle != null && isDrawRectangle && currRectagle.Width>1)
+            {
+                if (_airwayPatient != null)
+                {
+                    RectangleEntity rectangleEntity = new RectangleEntity();
+                    rectangleEntity.Orientation = _OrientationEnum;
+                    rectangleEntity.Rectagle = new Rectangle(currRectagle.X, currRectagle.Y, currRectagle.Width, currRectagle.Height);
+                    
+                    //rectangleEntity.studyUID = _airwayPatient.StudyInstanceUID;
+                    //rectangleEntity.seriesUID = _airwayPatient.SeriesInstanceUID;
+                    rectangleEntity.Frame = (int)tbFrame.Value;
+
+                    listRectangle.Add(rectangleEntity);
+
+                    //LesionAlgorithmDAO.TestLesionBytes(listRectangle , _dimensionsCT , _bitmapAirway.Height ,ref _airwayData);
+                }
+            }
+            //listRectangle.Add(new Rectangle(currRectagle.X , currRectagle.Y , currRectagle.Width , currRectagle.Height));
+            currRectagle = new Rectangle(new Point(0, 0), new Size(0, 0));
             //this.Cursor = System.Windows.Forms.Cursors.Arrow;
             startPointOnControlCoord = new PointF(e.X, e.Y);
             startPointOnImageCoord = Control2Image(matrix, startPointOnControlCoord);
@@ -2398,6 +2484,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             isDrawPolyline = false;
             isSelectConnectPoints = false;
             isMeasure = false;
+            isDrawRectangle = false;
             this.Cursor = Cursors.Arrow;
         }
 

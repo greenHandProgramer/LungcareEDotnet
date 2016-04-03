@@ -108,7 +108,7 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             {
                 _BaseResultFolder = Path.GetDirectoryName(airwayPath);
             }
-            SaveAndLoad3DAirway(_airwayPatient.AirwayVTP_FileName ,"" , true);
+            SaveAndLoad3DAirway(_airwayPatient.AirwayVTP_FileName ,"" , false);
 
             _lesionEntity = new LesionEntity();
 
@@ -171,6 +171,7 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
         private RibbonStyle.RibbonMenuButton btnSaveAirwayOrLesionResult;
         private RibbonStyle.RibbonMenuButton btnAddAirwayPoint;
         private RibbonStyle.RibbonMenuButton btnUndo;
+        private RibbonStyle.RibbonMenuButton btnDrawRectangle;
         
         private RibbonStyle.RibbonMenuButton btnAddLesionPoint;
         private RibbonStyle.RibbonMenuButton btnPanning;
@@ -179,7 +180,7 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
         private RibbonStyle.RibbonMenuButton btnDeletePoint;
         private RibbonStyle.RibbonMenuButton btnMeasure;
         private RibbonStyle.RibbonMenuButton btnProductPPT;
-        private RibbonStyle.RibbonMenuButton btnAddLesion;
+        private RibbonStyle.RibbonMenuButton btnLesionManage;
         private RibbonStyle.RibbonMenuButton btnUploadRefineResult;
 
         private void InitButton()
@@ -196,8 +197,10 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             this.btnRefresh = new RibbonStyle.RibbonMenuButton();
             this.btnMeasure = new RibbonStyle.RibbonMenuButton();
             this.btnProductPPT = new RibbonStyle.RibbonMenuButton();
-            this.btnAddLesion = new RibbonStyle.RibbonMenuButton();
+            this.btnLesionManage = new RibbonStyle.RibbonMenuButton();
             this.btnUploadRefineResult = new RibbonStyle.RibbonMenuButton();
+            this.btnDrawRectangle = new RibbonStyle.RibbonMenuButton();
+
 
             this.btnWidthAndLevel.AllowDrop = true;
             this.btnWidthAndLevel.Arrow = RibbonStyle.RibbonMenuButton.e_arrow.None;
@@ -612,38 +615,38 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             this.btnProductPPT.Title = "";
             this.btnProductPPT.UseVisualStyleBackColor = true;
 
-            this.btnAddLesion.AllowDrop = true;
-            this.btnAddLesion.Arrow = RibbonStyle.RibbonMenuButton.e_arrow.None;
-            this.btnAddLesion.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddLesion.BackgroundImage = global::LungCare.SupportPlatform.Properties.Resources.ruler1;
-            this.btnAddLesion.ColorBase = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.btnAddLesion.ColorBaseStroke = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(153)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnAddLesion.ColorOn = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(78)))));
-            this.btnAddLesion.ColorOnStroke = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(177)))), ((int)(((byte)(118)))));
-            this.btnAddLesion.ColorPress = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAddLesion.ColorPressStroke = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAddLesion.FadingSpeed = 20;
-            this.btnAddLesion.FlatAppearance.BorderSize = 0;
-            this.btnAddLesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btnAddLesion.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnAddLesion.GroupPos = RibbonStyle.RibbonMenuButton.e_groupPos.None;
-            this.btnAddLesion.Image = global::LungCare.SupportPlatform.Properties.Resources._48;
-            this.btnAddLesion.ImageLocation = RibbonStyle.RibbonMenuButton.e_imagelocation.Top;
-            this.btnAddLesion.ImageOffset = 5;
-            this.btnAddLesion.IsPressed = false;
-            this.btnAddLesion.KeepPress = false;
-            this.btnAddLesion.MaxImageSize = new System.Drawing.Point(0, 0);
-            this.btnAddLesion.MenuPos = new System.Drawing.Point(0, 0);
-            this.btnAddLesion.Name = "btnAddLesion";
-            this.btnAddLesion.Radius = 8;
-            this.btnAddLesion.ShowBase = RibbonStyle.RibbonMenuButton.e_showbase.Yes;
-            this.btnAddLesion.Size = new System.Drawing.Size(50, 50);
-            this.btnAddLesion.SplitButton = RibbonStyle.RibbonMenuButton.e_splitbutton.No;
-            this.btnAddLesion.SplitDistance = 0;
-            this.btnAddLesion.TabIndex = 97;
-            this.btnAddLesion.Title = "";
-            this.btnAddLesion.UseVisualStyleBackColor = true;
+            this.btnLesionManage.AllowDrop = true;
+            this.btnLesionManage.Arrow = RibbonStyle.RibbonMenuButton.e_arrow.None;
+            this.btnLesionManage.BackColor = System.Drawing.Color.Transparent;
+            this.btnLesionManage.BackgroundImage = global::LungCare.SupportPlatform.Properties.Resources.ruler1;
+            this.btnLesionManage.ColorBase = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.btnLesionManage.ColorBaseStroke = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(153)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnLesionManage.ColorOn = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(78)))));
+            this.btnLesionManage.ColorOnStroke = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(177)))), ((int)(((byte)(118)))));
+            this.btnLesionManage.ColorPress = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLesionManage.ColorPressStroke = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnLesionManage.FadingSpeed = 20;
+            this.btnLesionManage.FlatAppearance.BorderSize = 0;
+            this.btnLesionManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLesionManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnLesionManage.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnLesionManage.GroupPos = RibbonStyle.RibbonMenuButton.e_groupPos.None;
+            this.btnLesionManage.Image = global::LungCare.SupportPlatform.Properties.Resources._48;
+            this.btnLesionManage.ImageLocation = RibbonStyle.RibbonMenuButton.e_imagelocation.Top;
+            this.btnLesionManage.ImageOffset = 5;
+            this.btnLesionManage.IsPressed = false;
+            this.btnLesionManage.KeepPress = false;
+            this.btnLesionManage.MaxImageSize = new System.Drawing.Point(0, 0);
+            this.btnLesionManage.MenuPos = new System.Drawing.Point(0, 0);
+            this.btnLesionManage.Name = "btnAddLesion";
+            this.btnLesionManage.Radius = 8;
+            this.btnLesionManage.ShowBase = RibbonStyle.RibbonMenuButton.e_showbase.Yes;
+            this.btnLesionManage.Size = new System.Drawing.Size(50, 50);
+            this.btnLesionManage.SplitButton = RibbonStyle.RibbonMenuButton.e_splitbutton.No;
+            this.btnLesionManage.SplitDistance = 0;
+            this.btnLesionManage.TabIndex = 97;
+            this.btnLesionManage.Title = "";
+            this.btnLesionManage.UseVisualStyleBackColor = true;
             
             this.btnUploadRefineResult.AllowDrop = true;
             this.btnUploadRefineResult.Arrow = RibbonStyle.RibbonMenuButton.e_arrow.None;
@@ -678,9 +681,43 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             this.btnUploadRefineResult.Title = "";
             this.btnUploadRefineResult.UseVisualStyleBackColor = true;
 
+            
+            this.btnDrawRectangle.AllowDrop = true;
+            this.btnDrawRectangle.Arrow = RibbonStyle.RibbonMenuButton.e_arrow.None;
+            this.btnDrawRectangle.BackColor = System.Drawing.Color.Transparent;
+            this.btnDrawRectangle.BackgroundImage = global::LungCare.SupportPlatform.Properties.Resources.ruler1;
+            this.btnDrawRectangle.ColorBase = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.btnDrawRectangle.ColorBaseStroke = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(153)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnDrawRectangle.ColorOn = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(78)))));
+            this.btnDrawRectangle.ColorOnStroke = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(177)))), ((int)(((byte)(118)))));
+            this.btnDrawRectangle.ColorPress = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDrawRectangle.ColorPressStroke = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnDrawRectangle.FadingSpeed = 20;
+            this.btnDrawRectangle.FlatAppearance.BorderSize = 0;
+            this.btnDrawRectangle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDrawRectangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnDrawRectangle.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnDrawRectangle.GroupPos = RibbonStyle.RibbonMenuButton.e_groupPos.None;
+            this.btnDrawRectangle.Image = global::LungCare.SupportPlatform.Properties.Resources.png_0587;
+            this.btnDrawRectangle.ImageLocation = RibbonStyle.RibbonMenuButton.e_imagelocation.Top;
+            this.btnDrawRectangle.ImageOffset = 5;
+            this.btnDrawRectangle.IsPressed = false;
+            this.btnDrawRectangle.KeepPress = false;
+            this.btnDrawRectangle.MaxImageSize = new System.Drawing.Point(0, 0);
+            this.btnDrawRectangle.MenuPos = new System.Drawing.Point(0, 0);
+            this.btnDrawRectangle.Name = "btnDrawRectangle";
+            this.btnDrawRectangle.Radius = 8;
+            this.btnDrawRectangle.ShowBase = RibbonStyle.RibbonMenuButton.e_showbase.Yes;
+            this.btnDrawRectangle.Size = new System.Drawing.Size(50, 50);
+            this.btnDrawRectangle.SplitButton = RibbonStyle.RibbonMenuButton.e_splitbutton.No;
+            this.btnDrawRectangle.SplitDistance = 0;
+            this.btnDrawRectangle.TabIndex = 97;
+            this.btnDrawRectangle.Title = "";
+            this.btnDrawRectangle.UseVisualStyleBackColor = true;
+
             btnAddAirwayPoint.Click += btnAddAirwayPoint_Click;
             btnAddLesionPoint.Click += btnAddLesionPoint_Click;
-            btnAddLesion.Click += btnAddLesion_Click;
+            btnLesionManage.Click += btnAddLesion_Click;
             btnDeletePoint.Click += btnDeletePoint_Click;
             btnUndo.Click += btnUndo_Click;
             btnRefresh.Click += btnRefresh_Click;
@@ -692,21 +729,27 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             btnMeasure.Click += btnMeasure_Click;
             btnUploadRefineResult.Click += btnUploadRefineResult_Click;
             btnProductPPT.Click += btnProductPPT_Click;
+            btnDrawRectangle.Click += btnDrawRectangle_Click;
+            
             panel.Controls.Add(btnAddAirwayPoint);
             panel.Controls.Add(btnAddLesionPoint);
             panel.Controls.Add(btnDeletePoint);
-            panel.Controls.Add(btnAddLesion);
-            panel.Controls.Add(btnProductPPT);
             panel.Controls.Add(btnUndo);
-            panel.Controls.Add(btnRefresh);
             panel.Controls.Add(btnSaveAirwayOrLesionResult);
-            panel.Controls.Add(btnUploadRefineResult);
+
+            panel2.Controls.Add(btnDrawRectangle);
+            panel2.Controls.Add(btnLesionManage);
+            panel2.Controls.Add(btnProductPPT);
+            
+            
+            
+            panel2.Controls.Add(btnUploadRefineResult);
             
             panel1.Controls.Add(btnZoomOut);
             panel1.Controls.Add(btnPanning);
             panel1.Controls.Add(btnMeasure);
             panel1.Controls.Add(btnWidthAndLevel);
-            
+            panel1.Controls.Add(btnRefresh);
             panel1.Controls.Add(btnReturn);
 
             System.Windows.Forms.ToolTip p1 = new System.Windows.Forms.ToolTip();
@@ -726,6 +769,24 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             p2.SetToolTip(this.btnMeasure, "测量");
             p2.SetToolTip(this.btnWidthAndLevel, "窗宽窗位");
             p2.SetToolTip(this.btnReturn, "返回");
+        }
+
+        void btnDrawRectangle_Click(object sender, EventArgs e)
+        {
+            if (!btnDrawRectangle.KeepPress)
+            {
+                ButtonToInital();
+                btnDrawRectangle.KeepPress = true;
+                _CTViewControl2.StartDrawRectangle();
+
+            }
+            else
+            {
+                btnDrawRectangle.KeepPress = false;
+                _CTViewControl2.SetAllOperationDisable();
+                _CTViewControl2.StopDrawRectangle();
+            }
+            //throw new NotImplementedException();
         }
 
 
@@ -892,6 +953,7 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             btnWidthAndLevel.KeepPress = false;
             btnZoomOut.KeepPress = false;
             btnMeasure.KeepPress = false;
+            btnDrawRectangle.KeepPress = false;
             System.Windows.Forms.Application.DoEvents();
         }
 
