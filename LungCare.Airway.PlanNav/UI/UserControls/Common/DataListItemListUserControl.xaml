@@ -307,8 +307,8 @@
         <Label x:Name="lbLoadingPrompt" Content="正在读取数据。" HorizontalAlignment="Left" Margin="481,8,0,0" VerticalAlignment="Top" Width="162" FontSize="20"/>
         <Label x:Name="label_totalNumber" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Margin="899,0,0,18" RenderTransformOrigin="4.3,0"></Label>
         <Label x:Name="label_Pages" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16" Margin="740,0,252,23"></Label>
-        <CheckBox x:Name="cbSelectAll" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="33,26,0,0" VerticalAlignment="Top" Width="23" Checked="cbSelectAll_Checked" Unchecked="cbSelectAll_Unchecked"/>
-        <Button x:Name="btnDownloadAllDicom" Content="下载DICOM" HorizontalAlignment="Right" Margin="0,0,803,520" Width="108" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="15" Height="35" VerticalAlignment="Bottom" Visibility="Visible" Click="btnDownloadAllDicom_Click" >
+
+        <Button x:Name="btnDownloadAllDicom" Content="下载DICOM" HorizontalAlignment="Right" Margin="0,0,202,514" Width="60" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="15" Height="35" VerticalAlignment="Bottom" Visibility="Visible" Click="btnDownloadAllDicom_Click" >
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
@@ -325,7 +325,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnDownloadAllAirwayPackage" Content="下载结果" HorizontalAlignment="Right" Margin="0,0,666,520" Width="108" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="15" Height="35" VerticalAlignment="Bottom" Visibility="Visible" Click="btnDownloadAllAirwayPackage_Click" >
+        <Button x:Name="btnDownloadAllAirwayPackage" Content="下载结果" HorizontalAlignment="Right" Margin="0,0,139,514" Width="58" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="15" Height="35" VerticalAlignment="Bottom" Visibility="Visible" Click="btnDownloadAllAirwayPackage_Click" >
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
@@ -342,7 +342,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnRefresh" Content="刷新" HorizontalAlignment="Right" Margin="0,0,537,519" Width="108" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="15" Height="35" VerticalAlignment="Bottom" Visibility="Visible" Click="btnRefresh_Click" >
+        <Button x:Name="btnRefresh" Content="刷新" HorizontalAlignment="Right" Margin="0,0,58,521" Width="60" Background="#FF59275A" BorderThickness="0" BorderBrush="{x:Null}" IsTabStop="False" Foreground="White" Cursor="Hand" FontSize="15" Height="35" VerticalAlignment="Bottom" Visibility="Visible" Click="btnRefresh_Click" >
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="3,3,3,3" x:Name="Border" Background="#FF59275A">
@@ -359,5 +359,19 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <GroupBox Header="批量" Foreground="White" BorderThickness="0.6" HorizontalAlignment="Left" Margin="20,-3,0,0" VerticalAlignment="Top" Height="56" Width="377">
+            <Grid>
+                <CheckBox x:Name="cbSelectAll" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Checked="cbSelectAll_Checked" Unchecked="cbSelectAll_Unchecked"/>
+                <Label Content="选项:" Foreground="Black" HorizontalAlignment="Left" Margin="38,7,0,0" VerticalAlignment="Top"/>
+                <Label Content="DICOM:" Foreground="#FF59275A" HorizontalAlignment="Left" Margin="80,8,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSelectDicom" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="138,10,0,0" VerticalAlignment="Top" Width="23" Checked="cbSelectDicom_Checked" Unchecked="cbSelectDicom_Unchecked" RenderTransformOrigin="5.768,0.865"/>
+                <Label Content="结果:" Foreground="#FF59275A" HorizontalAlignment="Left" Margin="166,7,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSelectAirway" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="205,10,0,0" VerticalAlignment="Top" Width="23" Checked="cbSelectAirway_Checked" Unchecked="cbSelectAirway_Unchecked" RenderTransformOrigin="5.768,0.865"/>
+                <Image Height="40" Source="/LungCare.Airway.PlanNav;component/Images/下载(1).png" Cursor="Hand" ToolTip="" Margin="255,-1,67,-5" MouseDown="btnDownloadAll_Click"/>
+                <!--<Image Height="40" Source="/LungCare.Airway.PlanNav;component/Images/upload.png" Cursor="Hand" ToolTip="搜索" Margin="316,0,115,-6"/>-->
+                <!--<Image Height="35" Source="/LungCare.Airway.PlanNav;component/Resources/open.png" Cursor="Hand" ToolTip="搜索" Margin="363,0,68,-1"/>-->
+                <Image Height="30" Source="/LungCare.Airway.PlanNav;component/Resources/png-0651.png" Cursor="Hand" ToolTip="更新" Margin="309,5,17,-1" MouseDown="btnRefresh_Click"/>
+            </Grid>
+        </GroupBox>
     </Grid>
 </UserControl>

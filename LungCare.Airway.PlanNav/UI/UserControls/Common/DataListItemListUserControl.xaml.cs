@@ -1200,6 +1200,11 @@ namespace LungCare.SupportPlatform.UI.UserControls.Common
 
         private void btnDownloadAllAirwayPackage_Click(object sender, RoutedEventArgs e)
         {
+            DownloadSelectBatchAirway();
+        }
+
+        private void DownloadSelectBatchAirway()
+        {
             batchAirwayFilesDownload = new List<DataItemFilePair>();
             _airwayBatchDownloadIndex = 0;
             totalBatchSize = 0;
@@ -1238,16 +1243,21 @@ namespace LungCare.SupportPlatform.UI.UserControls.Common
            
         }
 
-
         public event EventHandler<DataListItemArgs> DownloadBatchDicomEvevt;
         public event EventHandler<DataListItemArgs> DownloadBatchAirwayEvevt;
         private int _dicomBatchDownloadIndex = 0, _airwayBatchDownloadIndex = 0;
-        private  List<DataItemFilePair> batchDicomFilesDownload;
+        private List<DataItemFilePair> batchDicomFilesDownload;
         private List<DataItemFilePair> batchAirwayFilesDownload;
         private long totalBatchSize = 0;
         private long hasDownloadSize = 0;
         private long increaseSize = 0;
         private void btnDownloadAllDicom_Click(object sender, RoutedEventArgs e)
+        {
+            DownloadSelectBatchDicoms();
+        }
+
+
+        private void DownloadSelectBatchDicoms()
         {
             batchDicomFilesDownload = new List<DataItemFilePair>();
             _dicomBatchDownloadIndex = 0;
@@ -1255,18 +1265,18 @@ namespace LungCare.SupportPlatform.UI.UserControls.Common
             hasDownloadSize = 0;
             increaseSize = 0;
             List<DataListItem> list = ListViewDAO.SelectDicomDataListItemsFromListView(listView, "cbSelect", true);
-            foreach (var item in list)
-            {
-                if (DownloadBatchDicomEvevt != null)
-                {
-                    DownloadBatchDicomEvevt(this, new DataListItemArgs()
-                    {
-                        DataListItem = item
-                    });
-                }
-            }
+            //foreach (var item in list)
+            //{
+            //    if (DownloadBatchDicomEvevt != null)
+            //    {
+            //        DownloadBatchDicomEvevt(this, new DataListItemArgs()
+            //        {
+            //            DataListItem = item
+            //        });
+            //    }
+            //}
 
-            return;
+            //return;
             batchDicomFilesDownload = LocalDicomDAO.GetFileListItemPair(list);
             if (batchDicomFilesDownload == null || batchDicomFilesDownload.Count <= 0)
             {
@@ -1280,12 +1290,11 @@ namespace LungCare.SupportPlatform.UI.UserControls.Common
                 totalBatchSize += item.FileListItem.FileSize;
             }
 
-            DownloadBatchDICOM(batchDicomFilesDownload[_dicomBatchDownloadIndex].FileListItem ,
+            DownloadBatchDICOM(batchDicomFilesDownload[_dicomBatchDownloadIndex].FileListItem,
                 batchDicomFilesDownload[_dicomBatchDownloadIndex].DataListItem);
             
             
         }
-
 
         private void DownloadBatchDICOM(FileListItem file , DataListItem dataListItem)
         {
@@ -1521,7 +1530,38 @@ namespace LungCare.SupportPlatform.UI.UserControls.Common
             }
         }
 
+        private bool isSelectDicom = false, isSelectAirway = false;
+        private void cbSelectDicom_Checked(object sender, RoutedEventArgs e)
+        {
+            isSelectDicom = true;
+        }
 
+        private void cbSelectDicom_Unchecked(object sender, RoutedEventArgs e)
+        {
+            isSelectDicom = false;
+        }
+
+        private void cbSelectAirway_Checked(object sender, RoutedEventArgs e)
+        {
+            isSelectAirway = true;
+        }
+
+        private void cbSelectAirway_Unchecked(object sender, RoutedEventArgs e)
+        {
+            isSelectAirway = false;
+        }
+
+        private void btnDownloadAll_Click(object sender, MouseButtonEventArgs e)
+        {
+            if (isSelectDicom)
+            {
+                DownloadSelectBatchDicoms();
+            }
+            if (isSelectAirway)
+            {
+                DownloadSelectBatchAirway();
+            }
+        }
 
     }
 }
