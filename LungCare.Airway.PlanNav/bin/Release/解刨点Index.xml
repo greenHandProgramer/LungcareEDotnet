@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOf解刨点Index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <解刨点Index>
+    <Index隆突>12731166</Index隆突>
+    <Index右上叶 xsi:nil="true" />
+    <Index右中叶 xsi:nil="true" />
+    <Index右背段 xsi:nil="true" />
+    <Index右基底 xsi:nil="true" />
+    <Index左上叶 xsi:nil="true" />
+    <Index左舌叶 xsi:nil="true" />
+    <Index左背段 xsi:nil="true" />
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突>12706501</Index隆突>
+    <Index右上叶>10093391</Index右上叶>
+    <Index右中叶>12446530</Index右中叶>
+    <Index右背段>15330134</Index右背段>
+    <Index右基底>18201432</Index右基底>
+    <Index左上叶>13480788</Index左上叶>
+    <Index左舌叶>15323811</Index左舌叶>
+    <Index左背段>17676959</Index左背段>
+    <Index左基底>19762345</Index左基底>
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突 xsi:nil="true" />
+    <Index右上叶 xsi:nil="true" />
+    <Index右中叶 xsi:nil="true" />
+    <Index右背段 xsi:nil="true" />
+    <Index右基底 xsi:nil="true" />
+    <Index左上叶 xsi:nil="true" />
+    <Index左舌叶 xsi:nil="true" />
+    <Index左背段 xsi:nil="true" />
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突>12736202</Index隆突>
+    <Index右上叶>12680980</Index右上叶>
+    <Index右中叶 xsi:nil="true" />
+    <Index右背段 xsi:nil="true" />
+    <Index右基底 xsi:nil="true" />
+    <Index左上叶 xsi:nil="true" />
+    <Index左舌叶 xsi:nil="true" />
+    <Index左背段 xsi:nil="true" />
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突>12710047</Index隆突>
+    <Index右上叶 xsi:nil="true" />
+    <Index右中叶>11394741</Index右中叶>
+    <Index右背段 xsi:nil="true" />
+    <Index右基底>16100538</Index右基底>
+    <Index左上叶>12694839</Index左上叶>
+    <Index左舌叶 xsi:nil="true" />
+    <Index左背段>18465084</Index左背段>
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突>12710047</Index隆突>
+    <Index右上叶 xsi:nil="true" />
+    <Index右中叶>11394741</Index右中叶>
+    <Index右背段 xsi:nil="true" />
+    <Index右基底>16100538</Index右基底>
+    <Index左上叶>12694839</Index左上叶>
+    <Index左舌叶 xsi:nil="true" />
+    <Index左背段>18465084</Index左背段>
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突>12723953</Index隆突>
+    <Index右上叶>15833297</Index右上叶>
+    <Index右中叶 xsi:nil="true" />
+    <Index右背段 xsi:nil="true" />
+    <Index右基底 xsi:nil="true" />
+    <Index左上叶 xsi:nil="true" />
+    <Index左舌叶 xsi:nil="true" />
+    <Index左背段 xsi:nil="true" />
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+  <解刨点Index>
+    <Index隆突>9040120</Index隆突>
+    <Index右上叶>12709056</Index右上叶>
+    <Index右中叶>14008007</Index右中叶>
+    <Index右背段 xsi:nil="true" />
+    <Index右基底 xsi:nil="true" />
+    <Index左上叶>11131161</Index左上叶>
+    <Index左舌叶>12701492</Index左舌叶>
+    <Index左背段>15043398</Index左背段>
+    <Index左基底 xsi:nil="true" />
+  </解刨点Index>
+</ArrayOf解刨点Index>
