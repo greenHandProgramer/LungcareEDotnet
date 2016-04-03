@@ -200,6 +200,7 @@
     <Compile Include="Entities\UI\VirtualToggleButton.cs" />
     <Compile Include="Entities\WindowWidthLevelArgs.cs" />
     <Compile Include="SupportPlatformDAO\Airway\AirwayDAO.cs" />
+    <Compile Include="SupportPlatformDAO\Algorithm\LesionAlgorithmDAO.cs" />
     <Compile Include="SupportPlatformDAO\LocalDicom\LocalDicomDAO.cs" />
     <Compile Include="SupportPlatformDAO\UI\ListViewDAO.cs" />
     <Compile Include="SupportPlatformDAO\UI\Utils.cs" />

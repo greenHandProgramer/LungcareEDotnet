@@ -367,7 +367,7 @@
                 <CheckBox x:Name="cbSelectDicom" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="138,10,0,0" VerticalAlignment="Top" Width="23" Checked="cbSelectDicom_Checked" Unchecked="cbSelectDicom_Unchecked" RenderTransformOrigin="5.768,0.865"/>
                 <Label Content="结果:" Foreground="#FF59275A" HorizontalAlignment="Left" Margin="166,7,0,0" VerticalAlignment="Top"/>
                 <CheckBox x:Name="cbSelectAirway" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="205,10,0,0" VerticalAlignment="Top" Width="23" Checked="cbSelectAirway_Checked" Unchecked="cbSelectAirway_Unchecked" RenderTransformOrigin="5.768,0.865"/>
-                <Image Height="40" Source="/LungCare.Airway.PlanNav;component/Images/下载(1).png" Cursor="Hand" ToolTip="" Margin="255,-1,67,-5" MouseDown="btnDownloadAll_Click"/>
+                <Image Height="40" Source="pack://siteoforigin:,,,/Resources/下载(1).png" Cursor="Hand" ToolTip="" Margin="255,-1,67,-5" MouseDown="btnDownloadAll_Click"/>
                 <!--<Image Height="40" Source="/LungCare.Airway.PlanNav;component/Images/upload.png" Cursor="Hand" ToolTip="搜索" Margin="316,0,115,-6"/>-->
                 <!--<Image Height="35" Source="/LungCare.Airway.PlanNav;component/Resources/open.png" Cursor="Hand" ToolTip="搜索" Margin="363,0,68,-1"/>-->
                 <Image Height="30" Source="/LungCare.Airway.PlanNav;component/Resources/png-0651.png" Cursor="Hand" ToolTip="更新" Margin="309,5,17,-1" MouseDown="btnRefresh_Click"/>

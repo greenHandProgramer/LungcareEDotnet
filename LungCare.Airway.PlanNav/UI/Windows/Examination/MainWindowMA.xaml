@@ -44,8 +44,11 @@
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
                     <Image x:Name="logoImage" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="160" Grid.Column="1" Stretch="Fill" Margin="6,9,0,0"/>
-                    <WindowsFormsHost Grid.Column="1" HorizontalAlignment="Left" Height="298" Margin="29,120,0,0" VerticalAlignment="Top" Width="135">
+                    <WindowsFormsHost Grid.Column="1" HorizontalAlignment="Left" Height="177" Margin="29,108,0,0" VerticalAlignment="Top" Width="135">
                         <wf:FlowLayoutPanel x:Name="panel"/>
+                    </WindowsFormsHost>
+                    <WindowsFormsHost Grid.Column="1" HorizontalAlignment="Left" Height="141" Margin="29,295,0,0" VerticalAlignment="Top" Width="135">
+                        <wf:FlowLayoutPanel x:Name="panel2"/>
                     </WindowsFormsHost>
                     <WindowsFormsHost Grid.Column="1" HorizontalAlignment="Left" Height="169" Margin="27,546,0,0" VerticalAlignment="Top" Width="135">
                         <wf:FlowLayoutPanel x:Name="panel1"/>
