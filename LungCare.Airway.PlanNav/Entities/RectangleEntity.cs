@@ -12,5 +12,7 @@ namespace LungCare.SupportPlatform.Entities
         public string studyUID { get; set; }
         public string seriesUID { get; set; }
         public int Frame { get; set; }
+
+        public OrientationEnum Orientation { get;set;} 
     }
 }
