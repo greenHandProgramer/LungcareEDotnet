@@ -1710,6 +1710,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
         {
             LesionAlgorithmDAO.ModifyLesionBytes(listRectangle , _dimensionsCT , _dimensionsCT[1]
                 , _dicomAlldata, ref _airwayData);
+            listRectangle = new List<RectangleEntity>();
             pictureBox.Refresh();
             return;
                 
