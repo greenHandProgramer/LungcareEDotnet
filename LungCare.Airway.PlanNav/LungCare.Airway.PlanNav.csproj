@@ -1403,6 +1403,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CTRefineApp.csproj" />
+    <Resource Include="Images\下载%281%29.png" />
+    <None Include="Resources\下载%281%29.png" />
     <Resource Include="Images\TimeWait.png" />
     <None Include="Resources\minimun.png" />
     <None Include="Resources\Camera-05%283%29.png" />
@@ -1412,7 +1414,6 @@
     <Resource Include="Images\朗开虚拟导航.png" />
     <None Include="Resources\朗开虚拟导航.png" />
     <None Include="Resources\upload.png" />
-    <None Include="Resources\下载%281%29.png" />
     <None Include="Resources\下载.png" />
     <None Include="Resources\Folder%28rar%29.png" />
     <None Include="Resources\Folder%28CT%29.png" />

@@ -672,7 +672,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
 
             //if (isDrawRectangle)
             {
-                pen = new Pen(Brushes.Red, 3 / matrix.Elements[3]);
+                pen = new Pen(Brushes.Yellow, 2 / matrix.Elements[3]);
                 pen.DashStyle = DashStyle.Solid;
                 if (currRectagle.Width != 0 && currRectagle.Height != 0)
                 {
@@ -820,7 +820,7 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
             e.Graphics.DrawString(((int)tbFrame.Value).ToString(), new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(2, pictureBox.Height -40));
             if (mouseOverIndex < _dicomAlldata.Length)
             {
-                e.Graphics.DrawString((_dicomAlldata[mouseOverIndex]).ToString(), new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(2, pictureBox.Height - 20));
+                e.Graphics.DrawString("Hu : " + (_dicomAlldata[mouseOverIndex]).ToString(), new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(pictureBox.Width - 100, pictureBox.Height - 20));
             }
             e.Graphics.DrawString(rightOrientationEnumText, new Font("微软雅黑", 14, FontStyle.Regular), Brushes.LightGreen, new PointF(pictureBox.Width - 30, pictureBox.Height / 2));
 
