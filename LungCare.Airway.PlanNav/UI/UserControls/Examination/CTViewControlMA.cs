@@ -1870,6 +1870,19 @@ namespace LungCare.SupportPlatform.UI.UserControls.Examination
 
                     listRectangle.Add(rectangleEntity);
 
+                    if (_OrientationEnum == OrientationEnum.Axial)
+                    {
+                        _point2D = new double[] { currRectagle.X + currRectagle.Width / 2, currRectagle.Y + currRectagle.Height / 2, tbFrame.Value };
+                        _point3D = PositionOperation.CT2D_2_3D(_point2D, _OrientationEnum, _dataSpacingCT, _bitmapCT.Width, _bitmapCT.Height);
+                        if (Picked != null)
+                        {
+                            Picked(this, new PickEventArg()
+                            {
+                                Position = _point3D
+                            });
+                        }
+                        UpdateCamera(_point3D, _point3D);
+                    }
                     //LesionAlgorithmDAO.TestLesionBytes(listRectangle , _dimensionsCT , _bitmapAirway.Height ,ref _airwayData);
                 }
             }

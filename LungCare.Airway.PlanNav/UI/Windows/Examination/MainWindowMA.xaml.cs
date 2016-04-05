@@ -182,7 +182,6 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
         private RibbonStyle.RibbonMenuButton btnProductPPT;
         private RibbonStyle.RibbonMenuButton btnLesionManage;
         private RibbonStyle.RibbonMenuButton btnUploadRefineResult;
-
         private void InitButton()
         {
             this.btnWidthAndLevel = new RibbonStyle.RibbonMenuButton();
@@ -698,7 +697,7 @@ namespace LungCare.SupportPlatform.UI.Windows.Examination
             this.btnDrawRectangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnDrawRectangle.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnDrawRectangle.GroupPos = RibbonStyle.RibbonMenuButton.e_groupPos.None;
-            this.btnDrawRectangle.Image = global::LungCare.SupportPlatform.Properties.Resources.png_0587;
+            this.btnDrawRectangle.Image = global::LungCare.SupportPlatform.Properties.Resources.画矩形;
             this.btnDrawRectangle.ImageLocation = RibbonStyle.RibbonMenuButton.e_imagelocation.Top;
             this.btnDrawRectangle.ImageOffset = 5;
             this.btnDrawRectangle.IsPressed = false;

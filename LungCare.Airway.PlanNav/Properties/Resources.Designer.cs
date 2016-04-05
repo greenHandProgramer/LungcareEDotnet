@@ -1213,6 +1213,16 @@ namespace LungCare.SupportPlatform.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 画矩形 {
+            get {
+                object obj = ResourceManager.GetObject("画矩形", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 病灶 {
             get {
                 object obj = ResourceManager.GetObject("病灶", resourceCulture);

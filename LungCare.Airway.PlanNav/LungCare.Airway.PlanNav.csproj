@@ -1403,6 +1403,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CTRefineApp.csproj" />
+    <None Include="Resources\画矩形.png" />
     <Resource Include="Images\下载%281%29.png" />
     <None Include="Resources\下载%281%29.png" />
     <Resource Include="Images\TimeWait.png" />
